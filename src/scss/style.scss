@@ -1,1 +1,42 @@
 // Main Sass File
+
+//  TOP SECTION START  ******************************************** -->
+ .top-section {
+    height: 90vh;
+    background-color: rgba(53, 53, 53, 0.555);
+    position: relative;
+
+    background-image: url("../img/cover.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .btn-container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        
+    }
+    .absolute-left-bottom {
+        position: absolute;
+        left: 15%;
+        bottom: 10%;
+
+    }
+    article {
+        width: 40%;
+    }
+ }
+
+ //  TOP SECTION END  *****************************************
+
+ //  NAV SECTION START  *****************************************
+.nav-container {
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
+} 
+ //  NAV SECTION END  *****************************************

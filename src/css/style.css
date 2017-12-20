@@ -1,0 +1,22 @@
+.top-section {
+  height: 90vh;
+  background-color: rgba(53, 53, 53, 0.555);
+  position: relative;
+  background-image: url("../img/cover.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
+  .top-section .btn-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0; }
+  .top-section .absolute-left-bottom {
+    position: absolute;
+    left: 15%;
+    bottom: 10%; }
+  .top-section article {
+    width: 40%; }
+
+.nav-container img {
+  height: 80px;
+  width: 80px; }

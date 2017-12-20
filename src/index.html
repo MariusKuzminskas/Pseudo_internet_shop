@@ -6,14 +6,43 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Bootstrap 4 Starter Pack</title>
+        <title>Gaudykles</title>
     </head>
 
     <body>
-        <h1>Bootstrap 4.0.0-beta Starter</h1>
+        <!-- TOP SECTION START  ******************************************** -->
+        <section class="container-fluid top-section" id="home" >
+            <div class="btn-container d-flex justify-content-between align-content-center">
+                <button class="btn btn-primary mx-3">[<]</button>
+                <button class="btn btn-primary mx-3">[>]</button>
+            </div>
+            <article class="absolute-left-bottom text-light">
+                <h3>miegok ramiai</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magnam laboriosam et, perspiciatis aut tenetur expedita sunt nam tempore blanditiis?</p>
+            </article>
+        </section>
+        <!-- TOP SECTION END  ******************************************** -->
+        
+        <!-- NAV SECTION START  ******************************************** -->
+        <div class="container-fluid nav-container">
+            <nav class="navbar navbar-light bg-light">
+                <span class="navbar-brand mb-0 h1"> <img class="img-fluid" src="../img/logo.png" alt="logotipas"></span>
+                
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-item nav-link h1" href="#home">Gaudykles</a>
+                </div>
+                <div class="navbar-nav mr-0">
+                    <a class="nav-item nav-link d-inline-block " href="#home"> <i class="fa fa-search text-dark d-inline-block " aria-hidden="true"></i> </a>
+                    <a class="nav-item nav-link d-inline-block" href="#home"> <i class="fa fa-bars text-dark d-inline-block" aria-hidden="true"></i> </a>
+                </div>
+            
+            </nav>
+        </div>
+        <!-- NAV SECTION END  ******************************************** -->
 
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
