@@ -20,3 +20,8 @@
 .nav-container img {
   height: 80px;
   width: 80px; }
+
+.three-pic-container {
+  height: 1500px; }
+  .three-pic-container .three-pic-row {
+    height: 60vh; }
