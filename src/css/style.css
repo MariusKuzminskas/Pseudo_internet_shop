@@ -1,3 +1,6 @@
+s {
+  color: gray; }
+
 .top-section {
   height: 90vh;
   background-color: rgba(53, 53, 53, 0.555);
@@ -21,7 +24,30 @@
   height: 80px;
   width: 80px; }
 
-.three-pic-container {
-  height: 1500px; }
-  .three-pic-container .three-pic-row {
-    height: 60vh; }
+.three-pic-container .three-pic-row {
+  height: 60vh; }
+
+.three-pic-container .item-container {
+  background-color: #f1f1f1; }
+
+.three-pic-container .img-container {
+  position: relative; }
+
+.three-pic-container .sale-container {
+  position: absolute;
+  top: 10%;
+  right: 5px; }
+
+.comments-section {
+  position: relative; }
+  .comments-section .btn-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0; }
+
+footer .row {
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  height: 40vh; }

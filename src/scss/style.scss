@@ -1,5 +1,9 @@
 // Main Sass File
 
+s {
+    color: gray; // sale prekems spava ruda
+}
+
 //  TOP SECTION START  ******************************************** -->
  .top-section {
     height: 90vh;
@@ -43,17 +47,62 @@
 
 //  THREE PIC SECTION START  ************************************
 .three-pic-container{
-    height: 1500px;
+    // height: 1500px;
 
     .three-pic-row {
         height: 60vh;
        
     }
+
     
-    a {
-        // display: inline-block;
+    .item-container {
+        background-color: rgb(241, 241, 241);
+    }
+    
+    .img-container {
+        position: relative;
+        // border: 1px solid black;
+       
+    }
+    .sale-container {
+        position: absolute;
+        top: 10%;
+        right: 5px;
+    }
+    
+}
+// THREE PIC SECTION end  ************************************
+
+// PICTURE GRID HEADLINE SECTION START  *******************
+
+//PICTURE GRID HEADLINE SECTION END  *********************
+
+
+
+
+// Review sec START
+.comments-section {
+    position: relative;
+    .btn-container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
         
     }
 }
 
-// THREE PIC SECTION START  ************************************
+
+// Revview sec END
+
+// Footer
+
+footer {
+    
+    .row {
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+        height: 40vh;
+    }
+}
