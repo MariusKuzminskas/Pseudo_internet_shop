@@ -70,3 +70,12 @@ footer {
     margin-top: 20px;
     padding-top: 20px;
     text-align: center; }
+
+.items-section .img-container {
+  position: relative;
+  min-height: 525px; }
+
+.items-section .sale-container {
+  position: absolute;
+  top: 10%;
+  right: 5px; }
