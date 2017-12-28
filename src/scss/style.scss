@@ -9,7 +9,7 @@ s {
     height: 90vh;
     background-color: rgba(53, 53, 53, 0.555);
     position: relative;
-
+    
     background-image: url("../img/cover.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -19,13 +19,18 @@ s {
         width: 100%;
         top: 50%;
         left: 0;
+        font-size: 3rem;
         
+        i {
+            font-size: 3rem;
+        }
     }
     .absolute-left-bottom {
         position: absolute;
         left: 15%;
         bottom: 10%;
-
+        background-color: rgba(255, 255, 255, 0.452);
+        border-radius: 25px;
     }
     article {
         width: 40%;
@@ -36,6 +41,10 @@ s {
 
  //  NAV SECTION START  *****************************************
 .nav-container {
+
+    i {
+        font-size: 2rem;
+    }
 
     img {
         height: 80px;
@@ -83,11 +92,17 @@ s {
 // Review sec START
 .comments-section {
     position: relative;
+    background-attachment: fixed;
+    
     .btn-container {
         position: absolute;
         width: 100%;
         top: 50%;
         left: 0;
+
+        i {
+            font-size: 2rem;
+        }
         
     }
 }
@@ -98,11 +113,23 @@ s {
 // Footer
 
 footer {
+    background-image: url(../img/footer-bg.png);
+    background-attachment: fixed;
     
+    a {
+        text-decoration: none;
+        font-size: 3rem;
+        margin-right: 20px;
+        color: antiquewhite;
+        vertical-align: center;
+    }
+    
+    
+
     .row {
         margin-top: 20px;
         padding-top: 20px;
         text-align: center;
-        height: 40vh;
+        // height: 40vh;
     }
 }

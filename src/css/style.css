@@ -12,13 +12,21 @@ s {
     position: absolute;
     width: 100%;
     top: 50%;
-    left: 0; }
+    left: 0;
+    font-size: 3rem; }
+    .top-section .btn-container i {
+      font-size: 3rem; }
   .top-section .absolute-left-bottom {
     position: absolute;
     left: 15%;
-    bottom: 10%; }
+    bottom: 10%;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 25px; }
   .top-section article {
     width: 40%; }
+
+.nav-container i {
+  font-size: 2rem; }
 
 .nav-container img {
   height: 80px;
@@ -39,15 +47,26 @@ s {
   right: 5px; }
 
 .comments-section {
-  position: relative; }
+  position: relative;
+  background-attachment: fixed; }
   .comments-section .btn-container {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 0; }
+    .comments-section .btn-container i {
+      font-size: 2rem; }
 
-footer .row {
-  margin-top: 20px;
-  padding-top: 20px;
-  text-align: center;
-  height: 40vh; }
+footer {
+  background-image: url(../img/footer-bg.png);
+  background-attachment: fixed; }
+  footer a {
+    text-decoration: none;
+    font-size: 3rem;
+    margin-right: 20px;
+    color: antiquewhite;
+    vertical-align: center; }
+  footer .row {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center; }
