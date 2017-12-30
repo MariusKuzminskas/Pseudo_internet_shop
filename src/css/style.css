@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:400,700,900|PT+Sans:400,700&subset=latin-ext");
+p {
+  font-family: "Montserrat", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif;
+  transition: 2s; }
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    text-shadow: 20px 20px 8px black; }
+
 s {
   color: gray; }
 
@@ -35,6 +45,11 @@ s {
 .three-pic-container .three-pic-row {
   height: 60vh; }
 
+.three-pic-container img {
+  transition: 1.2s; }
+  .three-pic-container img:hover {
+    filter: drop-shadow(0px 0px 15px black); }
+
 .three-pic-container .item-container {
   background-color: #f1f1f1; }
 
@@ -45,6 +60,9 @@ s {
   position: absolute;
   top: 10%;
   right: 5px; }
+
+.text-headline-container-column {
+  box-shadow: 0 0 12px #3651e6; }
 
 .comments-section {
   position: relative;
@@ -74,6 +92,11 @@ footer {
 .items-section .img-container {
   position: relative;
   min-height: 525px; }
+
+.items-section img {
+  transition: 1.2s; }
+  .items-section img:hover {
+    filter: drop-shadow(0px 0px 15px black); }
 
 .items-section .sale-container {
   position: absolute;
