@@ -1,6 +1,8 @@
 // Main Sass File
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:400,700,900|PT+Sans:400,700&subset=latin-ext');
 
+@import "mixins";
+
 $mano_spalva: rgba(53, 53, 53, 0.555);
 
 $mon-font: 'Montserrat', sans-serif;
@@ -12,11 +14,6 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $PT-font;
-    transition: 2s;
-    &:hover {
-        text-shadow: 20px 20px 8px rgb(0, 0, 0);
-
-    }
 }
 
 
@@ -84,10 +81,7 @@ s {
     }
     
     img {
-        transition: 1.2s;
-            &:hover {
-                 filter: drop-shadow(0px 0px 15px black);
-            }
+        @include imgShadow();
     }
 
     
@@ -111,10 +105,39 @@ s {
 
 // PICTURE GRID HEADLINE SECTION START  *******************
 .text-headline-container-column {
-    box-shadow: 0 0 12px rgb(54, 81, 230)
+    @include boxShadow();
 }
 //PICTURE GRID HEADLINE SECTION END  *********************
+.pic-grid-container {
 
+    .col-md-4, .col-md-8 {
+        position: relative;
+        transition: 1.2s;
+        &:hover h2 {
+            display: block;
+        }
+        
+        
+        h2 {
+            position: absolute;
+            left: 9%;
+            bottom: 10%;
+            display: none;
+            background-color: rgba(231, 165, 79, 0.61);
+            padding: 10px;
+            border-radius: 10px;
+            // color: wheat;
+            
+        }
+        
+        img {
+            @include antPaveikslo();
+        }
+    
+    }
+    
+    
+}
 
 
 
@@ -123,6 +146,9 @@ s {
     position: relative;
     background-attachment: fixed;
     
+    .fb-post {
+        @include boxShadow();
+    }
     .btn-container {
         position: absolute;
         width: 100%;

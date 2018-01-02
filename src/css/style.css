@@ -3,10 +3,7 @@ p {
   font-family: "Montserrat", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", sans-serif;
-  transition: 2s; }
-  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-    text-shadow: 20px 20px 8px black; }
+  font-family: "PT Sans", sans-serif; }
 
 s {
   color: gray; }
@@ -62,11 +59,37 @@ s {
   right: 5px; }
 
 .text-headline-container-column {
-  box-shadow: 0 0 12px #3651e6; }
+  box-shadow: 0 0 12px #3a3a3a;
+  transition: 1.2s; }
+  .text-headline-container-column:hover {
+    box-shadow: 0px 0px 23px black; }
+
+.pic-grid-container .col-md-4, .pic-grid-container .col-md-8 {
+  position: relative;
+  transition: 1.2s; }
+  .pic-grid-container .col-md-4:hover h2, .pic-grid-container .col-md-8:hover h2 {
+    display: block; }
+  .pic-grid-container .col-md-4 h2, .pic-grid-container .col-md-8 h2 {
+    position: absolute;
+    left: 9%;
+    bottom: 10%;
+    display: none;
+    background-color: rgba(231, 165, 79, 0.61);
+    padding: 10px;
+    border-radius: 10px; }
+  .pic-grid-container .col-md-4 img, .pic-grid-container .col-md-8 img {
+    transition: 1.2s; }
+    .pic-grid-container .col-md-4 img:hover, .pic-grid-container .col-md-8 img:hover {
+      filter: opacity(0.7); }
 
 .comments-section {
   position: relative;
   background-attachment: fixed; }
+  .comments-section .fb-post {
+    box-shadow: 0 0 12px #3a3a3a;
+    transition: 1.2s; }
+    .comments-section .fb-post:hover {
+      box-shadow: 0px 0px 23px black; }
   .comments-section .btn-container {
     position: absolute;
     width: 100%;
