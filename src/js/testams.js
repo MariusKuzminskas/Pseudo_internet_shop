@@ -10,6 +10,7 @@ var padidejimas = 0;
 
 // console.log("procPrieaug " + procPrieaug);
 
+ul> 
 
 // for (let i = 0; i < kiekMen; i++) {
 //     padidejimas = menAtl * procPrieaug;

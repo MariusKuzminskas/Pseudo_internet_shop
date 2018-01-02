@@ -1,6 +1,8 @@
 // Main Sass File
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:400,700,900|PT+Sans:400,700&subset=latin-ext');
 
+$mano_spalva: rgba(53, 53, 53, 0.555);
+
 $mon-font: 'Montserrat', sans-serif;
 $PT-font: 'PT Sans', sans-serif;
 $head-font: 'Fjalla One', sans-serif;
@@ -25,7 +27,7 @@ s {
 //  TOP SECTION START  ******************************************** -->
  .top-section {
     height: 90vh;
-    background-color: rgba(53, 53, 53, 0.555);
+    background-color: $mano_spalva;
     position: relative;
     
     background-image: url("../img/cover.jpg");
