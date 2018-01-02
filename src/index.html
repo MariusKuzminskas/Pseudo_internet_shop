@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+        <!-- AOS -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Gaudykles</title>
     </head>
@@ -25,12 +27,12 @@
 
         <!-- TOP SECTION START  ******************************************** -->
         <section class="container-fluid top-section" id="home" >
-            <div class="btn-container d-flex justify-content-between align-content-center">
+            <div class="btn-container d-flex justify-content-between align-content-center buttons-top">
                 <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                 <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
             </div>
             <article class="absolute-left-bottom p-2">
-                <h1 class="text-uppercase ">miegok ramiai</h1>
+                <h1 class="text-uppercase ">Sapnų Gaudyklės</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magnam laboriosam et, perspiciatis aut tenetur expedita sunt nam tempore blanditiis?</p>
             </article>
         </section>
@@ -65,7 +67,7 @@
             <!-- <button class="btn btn-primary">Paspausk</button> -->
             <div class="row tree-pic-row ">
                 <article class=" col-md-4 item-container ">
-                    <div class="img-container">
+                    <div class="img-container" data-aos="zoom-in-left" >
                         <img class="img-fluid" src="img/crop/1.jpg" alt="Sapnu gaudyklės nuotrauka"> 
                         <div class="sale-container bg-dark text-light px-1 "><p class="blockqoute my-auto text-uppercase font-weight-bold" >Išpardavimas</p></div>
                     </div>
@@ -74,7 +76,7 @@
                         <div class="price-container "><p><s class="disabled">30eur </s> 20 eur</p></div>
                     </div>
                 </article>
-                <article class=" col-md-4 item-container ">
+                <article class=" col-md-4 item-container " data-aos="zoom-in-up">
                     <div class="img-container">
                         <img class="img-fluid" src="img/crop/2.jpg" alt="Sapnu gaudyklės nuotrauka"> 
                         <div class="sale-container bg-dark text-light px-1 "><p class="blockqoute my-auto text-uppercase font-weight-bold" >Išpardavimas</p></div>
@@ -84,8 +86,8 @@
                         <div class="price-container "><p><s class="disabled">30eur </s> 20 eur</p></div>
                     </div>
                 </article>
-                <article class=" col-md-4 item-container ">
-                    <div class="img-container">
+                <article class=" col-md-4 item-container " data-aos="zoom-in-right">
+                    <div class="img-container ">
                         <img class="img-fluid" src="img/crop/3.jpg" alt="Sapnu gaudyklės nuotrauka"> 
                         <div class="sale-container bg-dark text-light px-1 "><p class="blockqoute my-auto text-uppercase font-weight-bold" >Išpardavimas</p></div>
                     </div>
@@ -100,7 +102,7 @@
         <!-- THREE PIC SECTION END  ******************************************** -->
         
         <!-- PICTURE GRID HEADLINE SECTION START  ******************************************** -->
-        <div class="container text-headline-container">
+        <div class="container text-headline-container" data-aos="zoom-in">
             <div class="row my-4">
                 <div class="col-md-6 offset-md-3 text-headline-container-column">
                     <h2 class="text-center">Įsigykite Sapnų gaudyklę</h2>
@@ -113,7 +115,7 @@
         <!-- PICTURE GRID SECTION START  ******************************************** -->
         <div class="container-fluid pic-grid-container">
             <div class="row no-gutters">
-                <div class="col-md-4"><img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"><h2>Sapnu gaudyklė #4</h2></div>
+                <div class="col-md-4" data-aos="fade-left" ><img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"><h2>Sapnu gaudyklė #4</h2></div>
                 <div class="col-md-4"><img class="img-fluid" src="img/crop/5.jpg" alt="Sapnu gaudyklės nuotrauka"><h2>Sapnu gaudyklė #5</h2></div>
                 <div class="col-md-4"><img class="img-fluid" src="img/crop/6.jpg" alt="Sapnu gaudyklės nuotrauka"><h2>Sapnu gaudyklė #6</h2></div>
             </div>
@@ -170,6 +172,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

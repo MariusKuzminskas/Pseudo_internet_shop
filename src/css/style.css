@@ -45,7 +45,7 @@ body {
   .top-section .absolute-left-bottom {
     position: absolute;
     left: 15%;
-    bottom: 10%;
+    bottom: 30%;
     background-color: rgba(255, 255, 255, 0.452);
     border-radius: 25px; }
   .top-section article {
@@ -68,25 +68,23 @@ body {
   height: 80px;
   width: 80px; }
 
-.three-pic-container .three-pic-row {
-  height: 60vh; }
-
-.three-pic-container img {
-  transition: 1.2s; }
-  .three-pic-container img:hover {
-    filter: drop-shadow(0px 0px 15px black); }
-
-.three-pic-container .item-container {
-  background-color: #f1f1f1;
+.three-pic-container {
   overflow: hidden; }
-
-.three-pic-container .img-container {
-  position: relative; }
-
-.three-pic-container .sale-container {
-  position: absolute;
-  top: 10%;
-  right: 5px; }
+  .three-pic-container .three-pic-row {
+    height: 60vh; }
+  .three-pic-container img {
+    transition: 1.2s; }
+    .three-pic-container img:hover {
+      filter: drop-shadow(0px 0px 15px black); }
+  .three-pic-container .item-container {
+    background-color: #f1f1f1;
+    overflow: hidden; }
+  .three-pic-container .img-container {
+    position: relative; }
+  .three-pic-container .sale-container {
+    position: absolute;
+    top: 10%;
+    right: 5px; }
 
 .text-headline-container-column {
   box-shadow: 0 0 12px #3a3a3a;
