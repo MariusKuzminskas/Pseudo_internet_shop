@@ -1,11 +1,11 @@
 $(window).scroll(function() {
 
     var wScroll = $(this).scrollTop();
-    var top = $('nav').scrollTop();
+    // var top = $('nav').scrollTop();
     
     $(".absolute-left-bottom").css({
-        'transform' : 'translate(0px, '+ wScroll /2 +'%)'
-        
+        'transform' : 'translate(0px, '+ wScroll /2 +'%)',
+        'opacity' : (Math.floor(((wScroll * - 1) / 100) + 10) / 10) 
     });
     $(".btn-container").css({
         'transform' : 'translate(0px, '+ wScroll /2 +'%)'
@@ -14,9 +14,10 @@ $(window).scroll(function() {
     console.log(wScroll);
     
     
-        // var navToTop = Math.floor((wScroll / 100));
-        // console.log('navTop: ' + navToTop);
-        console.log('navTop: ' + top);
+        var navToTop = (Math.floor(((wScroll * - 1) / 100) + 10) / 10);
+        // navToTop = navToTop / 10;
+        console.log('navTop: ' + navToTop);
+        // console.log('navTop: ' + top);
         
     
 });
