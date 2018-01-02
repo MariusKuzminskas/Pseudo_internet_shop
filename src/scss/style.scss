@@ -31,6 +31,7 @@ body {
     width: 10px;
     background-color: rgb(12, 12, 12);
     transition: width 2s ease;
+    z-index: 200;
     // transition: height 4s;
     h1 {
         opacity: 0;
@@ -118,6 +119,7 @@ body {
     
     .item-container {
         background-color: rgb(241, 241, 241);
+        overflow: hidden;
     }
     
     .img-container {
@@ -137,6 +139,9 @@ body {
 // PICTURE GRID HEADLINE SECTION START  *******************
 .text-headline-container-column {
     @include boxShadow();
+    .line-div {
+        @include lineDiv();
+    }
 }
 //PICTURE GRID HEADLINE SECTION END  *********************
 .pic-grid-container {
@@ -245,7 +250,7 @@ footer {
     }
     
     img {
-        @include imgShadow();
+        @include imgScale();
         min-height: 525px;
     }
     

@@ -22,13 +22,23 @@
 
 @mixin imgShadow() {
     transition: 1.2s;
-    transform: scale(1.15);
-
+    // transform: scale(1.15);
             &:hover {
                  filter: drop-shadow(0px 0px 15px black);
+                // transform: scale(1);
+            }
+}
+
+@mixin imgScale() {
+    transition: 1.2s;
+    transform: scale(1.15);
+            &:hover {
+                //  filter: drop-shadow(0px 0px 15px black);
                 transform: scale(1);
             }
 }
+
+
 
 @mixin navBorderFill() {
     transition: 1.2s;
@@ -41,4 +51,9 @@
             // transform: scale(1.1, 1.1);
             background-color: rgba(252, 241, 215, 0.63);
         }
+}
+
+@mixin lineDiv() {
+    width: 30%;
+    border: 2px solid rgba(39, 36, 36, 0.808);
 }
