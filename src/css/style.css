@@ -8,6 +8,24 @@ h1, h2, h3, h4, h5, h6 {
 s {
   color: gray; }
 
+body {
+  position: relative; }
+
+#super-absolute {
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  background-color: #0c0c0c;
+  transition: width 2s ease; }
+  #super-absolute h1 {
+    opacity: 0; }
+  #super-absolute:hover h1 {
+    transition: 5s ease;
+    opacity: 1; }
+  #super-absolute:hover {
+    z-index: 200;
+    width: 60%; }
+
 .top-section {
   height: 90vh;
   background-color: rgba(53, 53, 53, 0.555);
@@ -32,6 +50,16 @@ s {
   .top-section article {
     width: 40%; }
 
+.nav-container .nav-link {
+  transition: 1.2s;
+  border: 2px solid rgba(245, 222, 179, 0);
+  border-radius: 0 15px 0 15px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .nav-container .nav-link:hover {
+    border: 2px solid wheat;
+    background-color: rgba(252, 241, 215, 0.63); }
+
 .nav-container i {
   font-size: 2rem; }
 
@@ -43,9 +71,11 @@ s {
   height: 60vh; }
 
 .three-pic-container img {
-  transition: 1.2s; }
+  transition: 1.2s;
+  transform: scale(1.15); }
   .three-pic-container img:hover {
-    filter: drop-shadow(0px 0px 15px black); }
+    filter: drop-shadow(0px 0px 15px black);
+    transform: scale(1); }
 
 .three-pic-container .item-container {
   background-color: #f1f1f1; }
@@ -68,12 +98,13 @@ s {
   position: relative;
   transition: 1.2s; }
   .pic-grid-container .col-md-4:hover h2, .pic-grid-container .col-md-8:hover h2 {
-    display: block; }
+    opacity: 1; }
   .pic-grid-container .col-md-4 h2, .pic-grid-container .col-md-8 h2 {
+    transition: 1.5s ease;
+    opacity: 0;
     position: absolute;
     left: 9%;
     bottom: 10%;
-    display: none;
     background-color: rgba(231, 165, 79, 0.61);
     padding: 10px;
     border-radius: 10px; }
@@ -112,14 +143,20 @@ footer {
     padding-top: 20px;
     text-align: center; }
 
+.items-section .item-container {
+  border-right: 1px solid rgba(133, 133, 133, 0.692); }
+
 .items-section .img-container {
   position: relative;
-  min-height: 525px; }
+  overflow: hidden; }
 
 .items-section img {
-  transition: 1.2s; }
+  transition: 1.2s;
+  transform: scale(1.15);
+  min-height: 525px; }
   .items-section img:hover {
-    filter: drop-shadow(0px 0px 15px black); }
+    filter: drop-shadow(0px 0px 15px black);
+    transform: scale(1); }
 
 .items-section .sale-container {
   position: absolute;
