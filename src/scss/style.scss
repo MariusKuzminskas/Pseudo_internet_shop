@@ -183,7 +183,7 @@ body {
 // Review sec START
 .comments-section {
     position: relative;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     
     .fb-post {
         @include boxShadow();

@@ -115,8 +115,7 @@ body {
       filter: opacity(0.7); }
 
 .comments-section {
-  position: relative;
-  background-attachment: fixed; }
+  position: relative; }
   .comments-section .fb-post {
     box-shadow: 0 0 12px #3a3a3a;
     transition: 1.2s; }
