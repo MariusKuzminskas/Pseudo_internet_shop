@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+        <script>
+        $('document').ready(function() {
+            loadHTML();
+        });
+        function loadHTML() {
+            $(".nav-container").load("load/navbar.html")
+            $("footer").load("load/footer.html")
+            ; };
+        </script>
+    <title>Gaudykles</title>
+</head>
+
+<body>
+
+    <!-- NAV SECTION START  ******************************************** -->
+    <div class="container-fluid nav-container"></div>
+    <!-- NAV SECTION END  ******************************************** -->
+    
+
+    <section class="container about-section">
+        <div class="row">
+            <div class="col-md-6 bg-info">
+                <h2 class="text-center">Susisiekite</h2>
+                <form class="my-5" >
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Jūsų vardas</label>
+                      <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Vardas Pavardė">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Jūsų elektroninis paštas</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Jūsų žinutė</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="button-container d-flex justify-content-center">
+                        <button type="submit" class="btn btn-lg btn-primary px-5 ">Išsiūsti</button>
+                      </div>
+                    </form>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+        <footer></footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
