@@ -1,7 +1,13 @@
 $(window).scroll(function() {
 
     var wScroll = $(this).scrollTop();
-    var top = $('nav').scrollTop();
+    var topas = $('nav').position();
+    topas = topas.top;
+
+    if (topas < wScroll) {
+        console.log("tau pavyko");
+    }
+
     
     $(".absolute-left-bottom").css({
         'transform' : 'translate(0px, '+ wScroll /2 +'%)',
@@ -16,7 +22,7 @@ $(window).scroll(function() {
     
         var navToTop = (Math.floor(((wScroll * - 1) / 100) + 10) / 10);
         // navToTop = navToTop / 10;
-        console.log('navTop: ' + top);
+        console.log('navTop: ' + topas);
         // console.log('navTop: ' + top);
         
     
