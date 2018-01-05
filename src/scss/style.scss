@@ -4,6 +4,8 @@
 @import "mixins";
 
 $mano_spalva: rgba(53, 53, 53, 0.555);
+$nav_border_spalva: rgb(231, 165, 79);
+$nav_spalva: rgb(235, 218, 195);
 
 $mon-font: 'Montserrat', sans-serif;
 $PT-font: 'PT Sans', sans-serif;
@@ -86,8 +88,17 @@ body {
  //  TOP SECTION END  *****************************************
 
  //  NAV SECTION START  *****************************************
-.nav-container {
+.trigger-height {
+    height: 100px;
+}
 
+ .nav-container {
+    padding-left: 0;
+    padding-right: 0;
+    .navbar {
+        // border: 1px solid $nav_border_spalva;
+        background-color: $nav_spalva;
+    }
     .nav-link {
         @include navBorderFill();
     }

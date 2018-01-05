@@ -1,11 +1,17 @@
 $(window).scroll(function() {
 
     var wScroll = $(this).scrollTop();
-    var topas = $('nav').position();
+    var topas = $('.trigger').position();
     topas = topas.top;
 
     if (topas < wScroll) {
-        console.log("tau pavyko");
+        $('nav').addClass('fixed-top');
+        $('.trigger').addClass('trigger-height');
+        // console.log("tau pavyko");
+    } else {
+        $('nav').removeClass('fixed-top');
+        $('.trigger').removeClass('trigger-height');
+        
     }
 
     
