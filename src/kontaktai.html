@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -23,14 +24,14 @@
 </head>
 
 <body>
-
+    <div class="trigger"></div>
     <!-- NAV SECTION START  ******************************************** -->
     <div class="container-fluid nav-container"></div>
     <!-- NAV SECTION END  ******************************************** -->
     
 
     <section class="container about-section">
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-md-6 bg-info">
                 <h2 class="text-center">Susisiekite</h2>
                 <form class="my-5" >
@@ -47,11 +48,13 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
                       <div class="button-container d-flex justify-content-center">
-                        <button type="submit" class="btn btn-lg btn-primary px-5 ">Išsiūsti</button>
+                        <button type="submit" class="btn btn-lg btn-primary px-5 ">Išsiųsti</button>
                       </div>
                     </form>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div id="map"></div>
+            </div>
         </div>
 
 
@@ -68,7 +71,8 @@
 
 
         <footer></footer>
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1xBXtQo2-VpKXYMxJzlwGnPal8Cs6bDY&callback=initMap"
+        async defer></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

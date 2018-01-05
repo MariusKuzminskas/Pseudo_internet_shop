@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
@@ -36,7 +38,17 @@
         <!-- FACEBOOK COMENTS CODE END  ******************************************** -->
 
         <!-- TOP SECTION START  ******************************************** -->
-        <section class="container-fluid top-section" id="home" >
+        <section class="container-fluid top-section" id="home" data-slides='[
+        "img/crop/1.jpg",
+        "img/crop/2.jpg",
+        "img/crop/3.jpg",
+        "img/crop/4.jpg",
+        "img/crop/5.jpg",
+        "img/crop/6.jpg",
+        "img/crop/7.jpg",
+        "img/crop/8.jpg",
+        "img/crop/9.jpg"
+    ]'>
             <div class="btn-container d-flex justify-content-between align-content-center buttons-top">
                 <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                 <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
@@ -63,7 +75,7 @@
         <div class="container three-pic-container">
             <!-- <h1>labukas</h1> -->
             <!-- <button class="btn btn-primary">Paspausk</button> -->
-            <div class="row tree-pic-row ">
+            <div class="row tree-pic-row">
                 <article class=" col-md-4 item-container ">
                     <div class="img-container" data-aos="zoom-in-left" >
                         <img class="img-fluid" src="img/crop/1.jpg" alt="Sapnu gaudyklės nuotrauka"> 
@@ -154,6 +166,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script type="text/javascript" src="js/instafeed.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
