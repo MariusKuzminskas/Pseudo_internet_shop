@@ -51,34 +51,15 @@ function initMap() {
 // Google map end
 
 
-// slideshow funck
-(function($) {
-	
-	'use strict';
-	
-	var $slides = $('[data-slides]');
-	var images = $slides.data('slides');
-	var count = images.length;
-	var slideshow = function() {
-		$slides
-			.css('background-image', 'url("' + images[Math.floor(Math.random() * count)] + '")')
-			.show(0, function() {
-				setTimeout(slideshow, 5000);
-			});
-	};
-	
-	slideshow();
-	
-}(jQuery));
-
+    
 
 //instafeed.js 
-var feed = new Instafeed({
-    get: 'tagged',
-    tagName: 'awesome',
-    accessToken : '201846217.1677ed0.c490befc2ce9451ebfcdd077ddc2d85d'
-});
-feed.run();
+// var feed = new Instafeed({
+//     get: 'tagged',
+//     tagName: 'awesome',
+//     accessToken : '201846217.1677ed0.c490befc2ce9451ebfcdd077ddc2d85d'
+// });
+// feed.run();
 
 
 AOS.init({
