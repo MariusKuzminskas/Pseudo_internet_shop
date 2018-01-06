@@ -19,6 +19,10 @@ s {
 body {
   position: relative; }
 
+.line-div {
+  width: 30%;
+  border: 2px solid rgba(39, 36, 36, 0.808); }
+
 #super-absolute {
   position: absolute;
   height: 100%;
@@ -181,3 +185,11 @@ footer {
   transition: 1.2s; }
   #map:hover {
     box-shadow: 10px 10px 23px #7c7c7c; }
+
+.spacing {
+  height: 200px; }
+
+.additional-items-row .sale-container {
+  position: absolute;
+  top: 10%;
+  right: 5px; }

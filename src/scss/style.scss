@@ -30,6 +30,10 @@ body {
     
 }
 
+.line-div {
+    @include lineDiv();
+}
+
 #super-absolute {
     position: absolute;
     height: 100%;
@@ -286,3 +290,20 @@ footer {
     height: 100%;
     @include boxShadow();
   }
+
+
+//   item.html preke.html
+.spacing {
+    height: 200px;
+}
+
+
+.additional-items-row {
+
+    .sale-container {
+        position: absolute;
+        top: 10%;
+        right: 5px;
+        // color: rgb(178, 152, 192);
+    }
+}
