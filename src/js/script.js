@@ -67,3 +67,17 @@ AOS.init({
    });
 // opacity: 1;
 
+
+
+// index1 
+
+// jQuery.contains( container, contained )
+// tikriname ar esame index1 page ir paslepiame logo branda
+if (($('body'), $('#index1')) && ($('body'), $('.navbar-brand'))) {
+    var index1 = true;
+    var yy = $('.navbar > a').hide();
+    
+
+}
+
+console.log(yy);

@@ -108,6 +108,7 @@ body {
     }
     .nav-link {
         @include navBorderFill();
+        
     }
 
     i {
@@ -306,4 +307,21 @@ footer {
         right: 5px;
         // color: rgb(178, 152, 192);
     }
+}
+
+
+
+// INDEX1.html
+.nav-container1 {
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+.main1-container {
+    .navbar {
+        background-color: white;
+        
+    }
+
+
+
 }

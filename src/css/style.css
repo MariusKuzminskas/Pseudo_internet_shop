@@ -194,3 +194,9 @@ footer {
   position: absolute;
   top: 10%;
   right: 5px; }
+
+.nav-container1 {
+  border-bottom: 1px solid black; }
+
+.main1-container .navbar {
+  background-color: white; }
