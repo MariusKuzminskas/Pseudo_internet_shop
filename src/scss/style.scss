@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:400,700,900|PT+Sans:400,700&subset=latin-ext');
 
 @import "mixins";
-@import "dataCSS";
+// @import "dataCSS";
 
 
 $mano_spalva: rgba(53, 53, 53, 0.555);
@@ -11,13 +11,16 @@ $nav_spalva: rgb(235, 235, 235);
 
 $mon-font: 'Montserrat', sans-serif;
 $PT-font: 'PT Sans', sans-serif;
-$head-font: 'Fjalla One', sans-serif;
+// $head-font: 'Fjalla One', sans-serif;
+$head-font: "Arial Black", Gadget, sans-serif;
+$clean-font: Verdana, Geneva, sans-serif;
 
 p {
     font-family: $mon-font;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: $PT-font;
+// h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: $head-font;
 }
 
 
@@ -65,9 +68,9 @@ body {
     position: relative;
     overflow: hidden;
     
-    // background-image: url("../img/cover.jpg");
+    background-image: url("../img/cover1.jpg");
     background-attachment: fixed;
-    // background-size: cover;
+    background-size: cover;
     
     .btn-container {
         position: absolute;
@@ -84,11 +87,15 @@ body {
         position: absolute;
         left: 15%;
         bottom: 30%;
-        background-color: rgba(255, 255, 255, 0.452);
-        border-radius: 25px;
+        
+        // background-color: rgba(255, 255, 255, 0.452);
+        // border-radius: 25px;
     }
     article {
         width: 40%;
+        h1 {
+            font-size: 4rem;
+        }
     }
  }
 
@@ -108,7 +115,7 @@ body {
     }
     .nav-link {
         @include navBorderFill();
-        
+        // font-family: $clean-font;
     }
 
     i {

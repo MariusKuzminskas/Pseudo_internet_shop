@@ -4,24 +4,10 @@
         
        
         <!-- TOP SECTION START  ******************************************** -->
-        <section class="container-fluid top-section" id="home" data-slides='[
-        "img/1920/1.jpg",
-        "img/1920/2.jpg",
-        "img/1920/3.jpg",
-        "img/1920/4.jpg",
-        "img/1920/5.jpg",
-        "img/1920/6.jpg",
-        "img/1920/7.jpg",
-        "img/1920/8.jpg",
-        "img/1920/9.jpg"
-    ]'>
-            <div class="btn-container d-flex justify-content-between align-content-center buttons-top">
-                <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-            </div>
+        <section class="container-fluid top-section" id="home">
+            
             <article class="absolute-left-bottom p-2">
-                <h1 class="text-uppercase ">Sapnų Gaudyklės</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magnam laboriosam et, perspiciatis aut tenetur expedita sunt nam tempore blanditiis?</p>
+                <h1 class="text-uppercase text-light">Sapnų Gaudyklės</h1>
             </article>
         </section>
         <!-- TOP SECTION END  ******************************************** -->
@@ -119,4 +105,4 @@
         
         
     <!-- FOOTER SECTION Start  ******************************************** -->
-    <?php   require_once("./load/footer.html"); ?>
+    <?php   require("./load/footer.html"); ?>

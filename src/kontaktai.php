@@ -10,25 +10,49 @@
 
     <section class="container about-section">
         <div class="row mt-4">
-            <div class="col-md-6 bg-info">
+            <div class="col-md-6 ">
                 <h2 class="text-center">Susisiekite</h2>
-                <form class="my-5" >
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Jūsų vardas</label>
-                      <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Vardas Pavardė">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Jūsų elektroninis paštas</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Jūsų žinutė</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <div class="button-container d-flex justify-content-center">
-                        <button type="submit" class="btn btn-lg btn-primary px-5 ">Išsiųsti</button>
-                      </div>
-                    </form>
+                <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">Vardas, Pavardė</label>
+        </div>
+    </div>
+      <div class="row">
+      <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+      </div>
+      
+      <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">El. pašto adresas</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>  
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Jūsų pranešimas</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col s12 center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Sųsti
+                <i class="material-icons right">send</i>
+            </button>
+          </div>
+      </div>
+
+    </form>
+  </div>
+            
             </div>
             <div class="col-md-6">
                 <div id="map"></div>
@@ -37,4 +61,4 @@
     </section>
 
 <!-- FOOTER SECTION Start  ******************************************** -->
-<?php   require_once("./load/footer.html"); ?>
+<?php   require("./load/footer.html"); ?>
