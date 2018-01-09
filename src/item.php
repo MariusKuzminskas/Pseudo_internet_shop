@@ -1,41 +1,17 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta charset="utf-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-        <!-- AOS -->
-        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/jquery.min.js"></script>
-        <!-- MDL inject -->
-
-        <script>
-        $('document').ready(function() {
-            loadHTML();
-        });
-        function loadHTML() {
-            $(".nav-container").load("load/navbar.html")
-            $("footer").load("load/footer.html")
-            ; };
-        </script>
-    <title>Gaudykles</title>
-</head>
+<?php require_once("./load/head.html");    ?>
 
 <body>
 
     <!-- NAV SECTION START  ******************************************** -->
-    <!-- Soninis juodas uzdengiantis meniu -->
-    <!-- <div id="super-absolute">
-        <h1 class="display-4 text-light">Meniukas butu cia</h1>
-    </div> -->
-    <div class="trigger"></div>
-    <div class="container-fluid nav-container"></div>
+    <div class="trigger"></div>        
+    <div class="container-fluid nav-container">
+        <?php require_once("./load/navbar.html");  ?>                
+    </div>
     <!-- NAV SECTION END  ******************************************** -->
+    
+    
+        
+    
     <!-- Selection section START  ******************************************** -->
     <section class="container selection-section">
         <div class="row">
@@ -86,11 +62,9 @@
         <div class="row">
             <article class="col-md-4 item-container" data-aos="fade-down">
                 <div class="img-container">
-                    <a href="preke.html">
-                        <img class="img-fluid" src="img/port-thumb/5.jpg" alt="Sapnu gaudyklės nuotrauka">
-                        <div class="sale-container bg-dark text-light  px-1 ">
-                            <p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div></div>
-                    </a>
+                    <img class="img-fluid" src="img/port-thumb/5.jpg" alt="Sapnu gaudyklės nuotrauka">
+                    <div class="sale-container bg-dark text-light  px-1 ">
+                        <p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div></div>
                 <div class="under-image-container mt-3 d-flex justify-content-between">
                     <div class="text-container "><h5>Sapnų gaudyklė # 5</h5></div>
                     <div class="price-container "><p><s class="disabled">30eur </s> 20 eur</p>
@@ -142,16 +116,5 @@
 
     <!-- Items section END  ******************************************** -->
 
-    <footer></footer>
-
-
-
-
-    <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        <script src="js/script.js"></script>
-</body>
-
-</html>
+<!-- FOOTER SECTION Start  ******************************************** -->
+<?php   require_once("./load/footer.html"); ?>

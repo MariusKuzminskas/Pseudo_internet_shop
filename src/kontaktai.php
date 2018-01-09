@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.min.js"></script>
-        <script>
-        $('document').ready(function() {
-            loadHTML();
-        });
-        function loadHTML() {
-            $(".nav-container").load("load/navbar.html")
-            $("footer").load("load/footer.html")
-            ; };
-        </script>
-    <title>Gaudykles</title>
-</head>
-
+<?php require_once("./load/head.html");    ?>
 <body>
     <div class="trigger"></div>
     <!-- NAV SECTION START  ******************************************** -->
-    <div class="container-fluid nav-container"></div>
+    <div class="container-fluid nav-container">
+    <?php require_once("./load/navbar.html"); ?>
+    </div>
     <!-- NAV SECTION END  ******************************************** -->
     
 
@@ -60,23 +38,5 @@
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-        <footer></footer>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1xBXtQo2-VpKXYMxJzlwGnPal8Cs6bDY&callback=initMap"
-        async defer></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
-</html>
+<!-- FOOTER SECTION Start  ******************************************** -->
+<?php   require_once("./load/footer.html"); ?>

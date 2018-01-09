@@ -75,9 +75,9 @@ AOS.init({
 // tikriname ar esame index1 page ir paslepiame logo branda
 if (($('body'), $('#index1')) && ($('body'), $('.navbar-brand'))) {
     var index1 = true;
-    var yy = $('.navbar > a').hide();
+    // var yy = $('.navbar > a').hide();
     
 
 }
 
-console.log(yy);
+// console.log(yy);
