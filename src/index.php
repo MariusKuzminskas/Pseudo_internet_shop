@@ -96,6 +96,8 @@
                     <div class="col-md-12 px-0"> <img class="img-fluid" src="img/crop/8.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
                     <div class="col-md-12 px-0"><img class="img-fluid" src="img/crop/9.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
             </div>
+            
+            </div>
             </div>
         </div>
         <!-- PICTURE GRID SECTION END  ******************************************** -->

@@ -195,8 +195,12 @@ footer {
   top: 10%;
   right: 5px; }
 
-.nav-container1 {
-  border-bottom: 1px solid black; }
+.carousel-container {
+  width: 80%;
+  overflow: hidden; }
+  .carousel-container .additional-images-row div {
+    flex-shrink: 0;
+    width: 16%; }
 
 .main1-container .navbar {
   background-color: white; }

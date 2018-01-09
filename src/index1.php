@@ -10,9 +10,7 @@
     <div class="trigger"></div>
     <div class="container-fluid nav-container1">
             <nav class="navbar navbar-expand-lg navbar-light ">
-                    <a class="navbar-brand mb-0 h1" href="index.html">
-                        <img class="d-inline-block img-fluid" src="img/logo.png" alt="logotipas">
-                        <h3 class="d-inline-block ">Sapnu Gaudyklės</h3></a>
+                    
                     <!-- Toggle button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -22,11 +20,11 @@
                     <div class="collapse navbar-collapse   " id="navbarSupportedContent">
                         <div class="navbar-nav text-uppercase mx-auto ">
                             <!-- <a class="nav-item nav-link d-inline-block " href="#home"> <i class="fa fa-search text-dark d-inline-block " aria-hidden="true"></i> </a> -->
-                            <a class="nav-item nav-link mx-3" href="index1.html">   <h5>Pagrindinis2</h5> </a>
-                            <a class="nav-item nav-link mx-3" href="index.html">    <h5>Pagrindinis </h5> </a>
-                            <a class="nav-item nav-link mx-3" href="shop.html">     <h5>Parduotuvė  </h5> </a>
-                            <a class="nav-item nav-link mx-3" href="apie.html">     <h5>Apie mane   </h5></a>
-                            <a class="nav-item nav-link mx-3" href="kontaktai.html"><h5>Kontaktai   </h5></a>
+                            <a class="nav-item nav-link mx-3" href="index1.php">   <h5>Pagrindinis2</h5> </a>
+                            <a class="nav-item nav-link mx-3" href="index.php">    <h5>Pagrindinis </h5> </a>
+                            <a class="nav-item nav-link mx-3" href="shop.php">     <h5>Parduotuvė  </h5> </a>
+                            <a class="nav-item nav-link mx-3" href="apie.php">     <h5>Apie mane   </h5></a>
+                            <a class="nav-item nav-link mx-3" href="kontaktai.php"><h5>Kontaktai   </h5></a>
                             <!-- <a class="nav-item nav-link d-inline-block" href="#home"> <i class="fa fa-bars text-dark d-inline-block" aria-hidden="true"></i> </a> -->
                         </div>
                     </div>
@@ -47,8 +45,9 @@
         <div class="line-div mx-auto w-50 my-4"></div>
     </section>
             <br>
-        <div class="additional-images-row d-flex ">
-                <div class=""data-aos="fade-right" ><img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+        <div class="carousel-container">
+            <div class="additional-images-row d-flex ">
+                <div class=""data-aos="fade-right">  <img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
                 <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/5.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
                 <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/6.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
                 <div class=""data-aos="fade-right" ><img class="img-fluid" src="img/crop/7.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
@@ -56,11 +55,14 @@
                 <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/10.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
                 <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
                 <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
+            </div>
         </div>
         <br>
         <br>
         <br>
         <br>
+        
+        
         <div class="div d-flex justify-content-center ">
             <img class="" src="./img/footer.jpg" alt="" >
         </div>

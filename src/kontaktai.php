@@ -34,8 +34,6 @@
                 <div id="map"></div>
             </div>
         </div>
-
-
     </section>
 
 <!-- FOOTER SECTION Start  ******************************************** -->
