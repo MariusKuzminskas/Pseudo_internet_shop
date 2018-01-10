@@ -47,22 +47,22 @@
             <br>
         <div class="carousel-container mx-auto position-relative">
             <div class="additional-images-row d-flex position-relative ">
-                <div class=""data-aos="fade-right">  <img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/5.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/6.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-right">  <img class="img-fluid" src="img/crop/7.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/8.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/10.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
-                <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
-                <div class=""data-aos="fade-right">  <img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/5.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/6.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-right">  <img class="img-fluid" src="img/crop/7.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/8.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/10.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
-                <div class=""data-aos="fade-down">   <img class="img-fluid" src="img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
-                <div class=""data-aos="fade-left">   <img class="img-fluid" src="img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
+                <div class="position-relative"data-aos="fade-right">  <img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-down">   <img class="img-fluid" src="img/crop/5.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-left">   <img class="img-fluid" src="img/crop/6.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-right">  <img class="img-fluid" src="img/crop/7.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-down">   <img class="img-fluid" src="img/crop/8.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-left">   <img class="img-fluid" src="img/crop/10.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
+                <div class="position-relative"data-aos="fade-down">   <img class="img-fluid" src="img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-left">   <img class="img-fluid" src="img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
+                <div class="position-relative"data-aos="fade-right">  <img class="img-fluid" src="img/crop/4.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-down">   <img class="img-fluid" src="img/crop/5.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-left">   <img class="img-fluid" src="img/crop/6.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-right">  <img class="img-fluid" src="img/crop/7.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-down">   <img class="img-fluid" src="img/crop/8.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-left">   <img class="img-fluid" src="img/crop/10.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
+                <div class="position-relative"data-aos="fade-down">   <img class="img-fluid" src="img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka"> </div>
+                <div class="position-relative"data-aos="fade-left">   <img class="img-fluid" src="img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka"></div>
             </div>
         </div>
         <br>

@@ -60,5 +60,17 @@
         </div>
     </section>
 
+    <section class="row">
+        <div class="col s12">
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./img/port-thumb/1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="./img/port-thumb/2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./img/port-thumb/3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="./img/port-thumb/4.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="./img/port-thumb/5.jpg"></a>
+        </div>
+        </div>
+    </section>
+
 <!-- FOOTER SECTION Start  ******************************************** -->
 <?php   require("./load/footer.html"); ?>

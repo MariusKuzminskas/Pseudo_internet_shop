@@ -57,18 +57,7 @@
     <!-- Items section Start  ******************************************** -->
     <section class="container items-section">
         <div class="row">
-            <article class="col-md-4 item-container" data-aos="fade-down">
-                <div class="img-container">
-                    <a href="preke.php">
-                        <img class="img-fluid" src="img/port-thumb/5.jpg" alt="Sapnu gaudyklės nuotrauka">
-                        <div class="sale-container bg-dark text-light  px-1 ">
-                            <p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div></div>
-                    </a>
-                <div class="under-image-container mt-3 d-flex justify-content-between">
-                    <div class="text-container "><h5>Sapnų gaudyklė # 5</h5></div>
-                    <div class="price-container "><p><s class="disabled">30eur </s> 20 eur</p>
-                    </div></div>
-            </article>
+        <?php include("./load/shop_preke.php") ?>
             <article class="col-md-4 item-container" data-aos="fade-up">
                 <div class="img-container">
                     <img class="img-fluid" src="img/port-thumb/2.jpg" alt="Sapnu gaudyklės nuotrauka">
