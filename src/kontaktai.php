@@ -1,4 +1,4 @@
-<?php require_once("./load/head.html");    ?>
+<?php require_once("./load/headK.html");    ?>
 <body>
     <div class="trigger"></div>
     <!-- NAV SECTION START  ******************************************** -->

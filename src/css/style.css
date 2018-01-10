@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:400,700,900|PT+Sans:400,700&subset=latin-ext");
-p {
-  font-family: "Montserrat", sans-serif; }
-
-h1 {
-  font-family: "Arial Black", Gadget, sans-serif; }
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin-ext");
 s {
   color: gray; }
 
 body {
-  position: relative; }
+  position: relative;
+  font-family: 'Roboto', sans-serif; }
 
 .line-div {
   width: 30%;
@@ -39,18 +34,12 @@ body {
   background-image: url("../img/cover1.jpg");
   background-attachment: fixed;
   background-size: cover; }
-  .top-section .btn-container {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    font-size: 3rem; }
-    .top-section .btn-container i {
-      font-size: 3rem; }
   .top-section .absolute-left-bottom {
     position: absolute;
     left: 15%;
     bottom: 30%; }
+    .top-section .absolute-left-bottom h1 {
+      font-weight: 700; }
   .top-section article {
     width: 40%; }
     .top-section article h1 {

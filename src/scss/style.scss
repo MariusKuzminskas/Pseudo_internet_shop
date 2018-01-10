@@ -1,5 +1,6 @@
 // Main Sass File
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:400,700,900|PT+Sans:400,700&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin-ext');
 
 @import "mixins";
 // @import "dataCSS";
@@ -9,18 +10,14 @@ $mano_spalva: rgba(53, 53, 53, 0.555);
 $nav_border_spalva: rgb(179, 179, 179);
 $nav_spalva: rgb(235, 235, 235);
 
-$mon-font: 'Montserrat', sans-serif;
-$PT-font: 'PT Sans', sans-serif;
-// $head-font: 'Fjalla One', sans-serif;
-$head-font: "Arial Black", Gadget, sans-serif;
-$clean-font: Verdana, Geneva, sans-serif;
+
 
 p {
-    font-family: $mon-font;
+    
 }
 // h1, h2, h3, h4, h5, h6 {
 h1 {
-    font-family: $head-font;
+    
 }
 
 
@@ -30,6 +27,7 @@ s {
 
 body {
     position: relative;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -72,21 +70,13 @@ body {
     background-attachment: fixed;
     background-size: cover;
     
-    .btn-container {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        font-size: 3rem;
-        
-        i {
-            font-size: 3rem;
-        }
-    }
+    
     .absolute-left-bottom {
         position: absolute;
         left: 15%;
         bottom: 30%;
+        h1 { font-weight: 700; }
+        
         
         // background-color: rgba(255, 255, 255, 0.452);
         // border-radius: 25px;
@@ -115,7 +105,7 @@ body {
     }
     .nav-link {
         @include navBorderFill();
-        // font-family: $clean-font;
+        
     }
 
     i {

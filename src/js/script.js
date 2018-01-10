@@ -81,3 +81,25 @@ if (($('body'), $('#index1')) && ($('body'), $('.navbar-brand'))) {
 }
 
 // console.log(yy);
+
+var kiek = $('.additional-images-row img').width();
+var six = kiek * 6;
+$('.carousel-container').css("width", six);
+// console.log(testukas);
+
+function stumisKairen() {
+    // var kiek = 212;
+    $('.additional-images-row').animate({  left: '-='+kiek+'px' });
+};
+// var kiek = 50;
+
+// stumisKairen(200);
+
+setInterval (stumisKairen, 4000);
+
+
+
+$('.additional-images-row').on("click", function() {
+    $(this).animate({  left: '-='+kiek+'px' });
+    
+});
