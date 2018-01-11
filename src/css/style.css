@@ -179,8 +179,7 @@ footer {
   right: 5px; }
 
 .carousel-container {
-  width: 80%;
-  overflow: hidden; }
+  width: 80%; }
   .carousel-container .additional-images-row div {
     flex-shrink: 0;
     width: 16%; }

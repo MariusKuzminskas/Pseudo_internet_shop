@@ -3,8 +3,10 @@ $bs_col = "col-md-4";
 $linkas = "preke.php";
 $img_src = "img/port-thumb/5.jpg";
 $sale = true;
-$item_name = "Sapnų gaudyklė # 5";
+$item_ID = 5;
 $item_price = 20;
+
+
 
 ?>
 
@@ -20,7 +22,7 @@ $item_price = 20;
     </a>
     <div class="under-image-container mt-3 d-flex justify-content-between">
         <div class="text-container ">
-            <h5><?php print($item_name); ?></h5>
+            <h5>Sapnų gaudyklė # <?php print($item_ID); ?></h5>
         </div>
         <div class="price-container ">
             <p>

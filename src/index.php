@@ -1,7 +1,15 @@
 <?php require_once("./load/head.html");    ?>
 
     <body>
-        
+        <!-- FB page embed
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script> -->
        
         <!-- TOP SECTION START  ******************************************** -->
         <section class="container-fluid top-section" id="home">
@@ -96,9 +104,11 @@
             </div>
             
             <div class="comments-container d-flex justify-content-center">
-                <!-- Code from facebook page  -->
-                <!-- <div class="fb-post" data-href="https://www.facebook.com/paradnikaite/posts/10210433343938947:0" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/paradnikaite/posts/10210433343938947:0" class="fb-xfbml-parse-ignore"><p>Puiki dovana, a&#x10d;i&#x16b; u&#x17e; operatyvum&#x105;! Gaudys sapnus mielai mergaitei :)</p>Posted by <a href="https://www.facebook.com/paradnikaite">Agne Paradnikaite-Kivere</a> on&nbsp;<a href="https://www.facebook.com/paradnikaite/posts/10210433343938947:0">Wednesday, December 27, 2017</a></blockquote></div> -->
+            <iframe class="fb-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbagalinga%2Fposts%2F10210257610744488%3A0&width=500" width="500" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><div>
+            <iframe class="fb-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fagne.suchodolskyte%2Fposts%2F1648690111808810%3A0&width=500" width="500" height="354" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
             </div>
+        
+        </div>
         </div>
         <!-- REVIEW SECTION END  ******************************************** -->
         
