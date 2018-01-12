@@ -10,7 +10,7 @@
 
     <section class="container about-section">
         <div class="row mt-4">
-            <div class="col-md-6 ">
+            <div class="col m6 ">
                 <h2 class="text-center">Susisiekite</h2>
                 <div class="row">
     <form class="col s12">
@@ -54,7 +54,7 @@
   </div>
             
             </div>
-            <div class="col-md-6">
+            <div class="col m6">
                 <div id="map"></div>
             </div>
         </div>

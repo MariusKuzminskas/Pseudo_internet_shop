@@ -39,7 +39,27 @@ $(window).scroll(function() {
         // console.log('navTop: ' + top);
         
     
-});
+}); // scroll window end
+
+// Kontaktai.html validation
+
+function validateEmail($email) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test( $email );
+}
+// if( !validateEmail(emailaddress)) { /* do stuff here */ }
+
+
+    function paspausta(e) {
+        e.preventDefault();
+        alert("ka cia spaudai?");
+    }
+
+    $('button[type="submit"]').on('click', paspausta);
+
+
+
+
 
 // Google map
 function initMap() {
