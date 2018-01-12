@@ -1,11 +1,15 @@
 <?php 
+$item_ID = 5;
 $bs_col = "col-md-4";
-$linkas = "preke.php";
+$linkas = "preke.php?id=5";
 $img_src = "img/port-thumb/5.jpg";
 $sale = true;
-$item_ID = 5;
 $item_price = 20;
 
+$preke1 = [ "col-md-4", "preke.php?id=5", "img/port-thumb/5.jpg", true, 5, 20 ];
+$preke2 = [ "col-md-4", "preke.php?id=6", "img/port-thumb/6.jpg", true, 6, 23 ];
+
+$prekesVisos = [ $preke1, $preke2 ]
 
 
 ?>

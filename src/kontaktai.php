@@ -24,13 +24,13 @@
       <div class="row">
       <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" class="validate">
+          <input id="icon_telephone" type="tel" class="validate" placeholder="+370">
           <label for="icon_telephone">Telephone</label>
       </div>
       
       <div class="input-field col s6">
           <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" class="validateTE">
           <label for="email">El. pašto adresas</label>
         </div>
       </div>
@@ -44,13 +44,15 @@
       </div>
       <div class="row">
           <div class="col s12 center-align">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Sųsti
+            <button id="siusti" class="btn waves-effect waves-light" >Sųsti
+            <!-- <button  class="btn waves-effect waves-light" type="submit" name="action">Sųsti -->
                 <i class="material-icons right">send</i>
             </button>
           </div>
       </div>
 
     </form>
+            
   </div>
             
             </div>
