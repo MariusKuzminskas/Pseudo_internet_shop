@@ -1,15 +1,25 @@
 <?php 
-$item_ID = 5;
-$bs_col = "col-md-4";
-$linkas = "preke.php?id=5";
-$img_src = "img/port-thumb/5.jpg";
-$sale = true;
-$item_price = 20;
 
-$preke1 = [ "col-md-4", "preke.php?id=5", "img/port-thumb/5.jpg", true, 5, 20 ];
-$preke2 = [ "col-md-4", "preke.php?id=6", "img/port-thumb/6.jpg", true, 6, 23 ];
+include('./php/dbFunctions.php');
 
-$prekesVisos = [ $preke1, $preke2 ]
+
+$prekes = getPrekes(); // gauname vis1 msql masyva
+$vienaprekesEile = mysqli_fetch_assoc($prekes); // pavercia viena eilute is  msql masyvo ir pavercia assoc array
+
+
+if($vienaprekesEile != NULL) {
+            while ( $vienaprekesEile ) {
+                $vienaprekesEile = mysqli_fetch_assoc($prekes);
+                
+       
+// $idedit = 
+
+$item_ID = ($vienaprekesEile['id']) - 1;
+$bs_col = $vienaprekesEile['bs_col'];
+$linkas = "preke.php?id=$item_ID";
+$img_src = $vienaprekesEile['img_src'];
+$sale = $vienaprekesEile['sale'];
+$item_price = $vienaprekesEile['price'];
 
 
 ?>
@@ -34,3 +44,10 @@ $prekesVisos = [ $preke1, $preke2 ]
         </div>
     </div>
 </article>
+
+<?php
+
+    } //while end
+} //if end
+
+?>

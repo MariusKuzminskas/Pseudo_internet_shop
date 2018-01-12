@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.carousel').carousel();
-    $('.materialboxed').materialbox();
+    //$('.materialbox').materialbox();
   
 
 $(window).scroll(function() {

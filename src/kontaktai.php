@@ -56,6 +56,8 @@ require_once("./load/headK.html");    ?>
           </div>
       </div>
 
+    <div id="isiustas"></div>
+
     </form>
     <?php 
     if (isset($_SESSION["isiuntimas"])) {  session_destroy();  }

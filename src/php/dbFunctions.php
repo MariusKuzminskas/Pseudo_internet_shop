@@ -100,13 +100,12 @@ function getDoctor($nr) {
 
 function getPrekes() {
     $sql_textas = "SELECT * FROM shop_prekes";
-    echo $sql_textas; 
-
+    //echo $sql_textas; 
     // Liepti vykdyti musu sql texto query
     $resultatas = mysqli_query( getPrisijungimas(), $sql_textas );
     
     if ($resultatas) {
-        echo "preke rasta <br>";
+        // echo "<br> preke rasta <br>";
         return $resultatas;
     } else {
         echo "ERROR:  preke nerasta <br>";
@@ -115,23 +114,39 @@ function getPrekes() {
 }
 
 
-$x = getPrekes();
-
-var_dump($x);
-
-for ($i=1; $i < 4; $i++) { 
-    # code...
+// $prekes = getPrekes(); // gauname vis1 msql masyva
+// $vienaprekesEile = mysqli_fetch_assoc($prekes); // pavercia viena eilute is  msql masyvo ir pavercia assoc array
+// // $vienaprekeArr = mysqli_fetch_array($prekes); // pavercia viena eilute is  msql masyvo ir pavercia assoc array
 
 
-// sudedame i assod masyva 
-$x = mysqli_fetch_assoc($x); 
 
-echo "<br><br>";
-// print_r( $x );
-echo "<br><br>";
-echo $x['id'];
 
-}
+// print($vienaprekesEile['bs_col']);
+
+// $item_ID = $vienaprekesEile['id'];
+// $bs_col = $vienaprekesEile['bs_col'];
+// $linkas = "preke.php?id=$item_ID";
+// $img_src = $vienaprekesEile['img_src'];
+// $sale = $vienaprekesEile['sale'];
+// $item_price = $vienaprekesEile['price'];
+
+
+
+
+
+
+// if($vienapreke != NULL) {
+//         while ( $vienapreke ) {
+//              echo "Vartotojo vardas: " . $vienapreke['img_src'] . "<br>";
+//              $vienapreke = mysqli_fetch_assoc($prekes);
+//             echo print_r($vienapreke);
+//         }
+//     }
+
+ 
+
+
+
 
 
 

@@ -58,47 +58,7 @@
     <section class="container items-section">
         <div class="row">
         <?php include("./load/shop_preke.php") ?>
-            <article class="col-md-4 item-container" data-aos="fade-up">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/port-thumb/2.jpg" alt="Sapnu gaudyklės nuotrauka">
-                    <!-- <div class="sale-container bg-dark text-light  px-1 "><p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div> -->
-                    </div>
-                <div class="under-image-container mt-3 d-flex justify-content-between">
-                    <div class="text-container "><h5>Sapnų gaudyklė # 2</h5></div>
-                    <div class="price-container "><p> 30 eur</p>
-                    </div></div>
-            </article>
-            <article class="col-md-4 item-container" data-aos="fade-down">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/port-thumb/3.jpg" alt="Sapnu gaudyklės nuotrauka">
-                    <div class="sale-container bg-dark text-light  px-1 ">
-                        <p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div></div>
-                <div class="under-image-container mt-3 d-flex justify-content-between">
-                    <div class="text-container "><h5>Sapnų gaudyklė # 3</h5></div>
-                    <div class="price-container "><p><s class="disabled">30eur </s> 20 eur</p>
-                    </div></div>
-            </article>
-            <article class="col-md-4 item-container ">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/port-thumb/4.jpg" alt="Sapnu gaudyklės nuotrauka">
-                    <!-- <div class="sale-container bg-dark text-light  px-1 "><p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div> -->
-                </div>
-                <div class="under-image-container mt-3 d-flex justify-content-between">
-                    <div class="text-container "><h5>Sapnų gaudyklė # 4</h5></div>
-                    <div class="price-container "><p> 24 eur</p>
-                    </div></div>
-            </article>
-            <article class="col-md-8 item-container ">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/crop/9.jpg" alt="Sapnu gaudyklės nuotrauka">
-                    <!-- <div class="sale-container bg-dark text-light  px-1 "><p class="blockqoute my-auto text-uppercase font-weight-bold">Išpardavimas</p></div> -->
-                </div>
-                <div class="under-image-container mt-3 d-flex justify-content-between">
-                    <div class="text-container "><h5>Sapnų gaudyklė # 9</h5></div>
-                    <div class="price-container "><p> 50 eur</p>
-                    </div></div>
-            </article>
-
+            
         </div>
     </section>
 
