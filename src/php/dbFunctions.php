@@ -117,18 +117,21 @@ function getPrekes() {
 
 $x = getPrekes();
 
+var_dump($x);
+
+for ($i=1; $i < 4; $i++) { 
+    # code...
+
+
 // sudedame i assod masyva 
 $x = mysqli_fetch_assoc($x); 
 
-
 echo "<br><br>";
-print_r( $x );
+// print_r( $x );
 echo "<br><br>";
-
-
 echo $x['id'];
 
-
+}
 
 
 

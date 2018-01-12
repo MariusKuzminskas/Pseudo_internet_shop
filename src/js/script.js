@@ -53,30 +53,31 @@ function validateEmail(pastas) {
 // formos emailo formato ir numerio ilgio validacija
 // turint laiko padarysiu kad tikrintu onBlurr() o ne on btnpress
 // reik ijungti atgal e.preventDefault    
-    $('button#siusti').on('click', function(e) {
-        e.preventDefault();
-    // alert("ka cia spaudai?");
-    let vardas = $('input#icon_prefix').val();
-    let telefonas = $('input#icon_telephone').val();
-    let emailas = $('input#email').val();
-    let textas = $('textarea#textarea1').val();
+  
+// $('button#siusti').on('click', function(e) {
+//         e.preventDefault();
+//     // alert("ka cia spaudai?");
+//     let vardas = $('input#icon_prefix').val();
+//     let telefonas = $('input#icon_telephone').val();
+//     let emailas = $('input#email').val();
+//     let textas = $('textarea#textarea1').val();
    
-    let forma = {
-        name: vardas,
-        phone: telefonas,
-        email: emailas,
-        text: textas
-    }
-    // console.log(forma);
-    let telIlgis = forma.phone.length;
+//     let forma = {
+//         name: vardas,
+//         phone: telefonas,
+//         email: emailas,
+//         text: textas
+//     }
+//     // console.log(forma);
+//     let telIlgis = forma.phone.length;
     
-    if( !validateEmail(forma.email)) { alert('emailas NEtinkamas') }
-    if (telIlgis > 0) {
-        if (telIlgis < 9 ) { alert('Telefonas per trumpas')  }
-        if (telIlgis > 12 ) { alert('Telefonas per ilgas')  }
-    }
+//     if( !validateEmail(forma.email)) { alert('emailas NEtinkamas') }
+//     if (telIlgis > 0) {
+//         if (telIlgis < 9 ) { alert('Telefonas per trumpas')  }
+//         if (telIlgis > 12 ) { alert('Telefonas per ilgas')  }
+//     }
     
-    });
+// });
 
 
 
@@ -163,6 +164,12 @@ $('img').on("click", function () {
 
 
 ///$('.additional-images-row').on("click",
+
+
+
+
+//
+
 
 
 
