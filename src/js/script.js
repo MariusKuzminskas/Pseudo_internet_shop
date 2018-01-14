@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.carousel').carousel();
     //$('.materialbox').materialbox();
+    $(".button-collapse").sideNav();
   
 
 $(window).scroll(function() {

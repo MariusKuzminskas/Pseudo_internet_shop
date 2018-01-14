@@ -28,7 +28,6 @@ body {
 
 .top-section {
   height: 90vh;
-  background-color: rgba(53, 53, 53, 0.555);
   position: relative;
   overflow: hidden;
   background-image: url("../img/cover1.jpg");
@@ -51,6 +50,15 @@ body {
 .nav-container {
   padding-left: 0;
   padding-right: 0; }
+  .nav-container .nav-wrapper #logo-text {
+    right: 150px;
+    color: #757474; }
+  .nav-container .nav-wrapper .brand-logo {
+    padding-top: 20px; }
+  .nav-container .nav-wrapper img {
+    height: 100%; }
+  .nav-container .nav-wrapper ul > li h5 {
+    color: #757474; }
   .nav-container .navbar {
     background-color: #ebebeb; }
   .nav-container .nav-link {
@@ -65,8 +73,8 @@ body {
   .nav-container i {
     font-size: 2rem; }
   .nav-container img {
-    height: 80px;
-    width: 80px; }
+    height: 70px;
+    width: 70px; }
 
 .three-pic-container {
   overflow: hidden; }

@@ -1,51 +1,55 @@
 <?php session_start();
 require_once("./load/headK.html");    ?>
 <body>
-
     <!-- <div class="trigger"></div> -->
     <!-- NAV SECTION START  ******************************************** -->
     <div class="navbar-fixed nav-container">
-        <?php //require_once("./load/navbar.html"); ?>
-        
-        <nav class="nav-extended">
-            <div class="nav-wrapper valign-wrapper grey lighten-3  ">
-                <a href="#" id="logo-text" class="brand-logo right">  Sapnų Gaudyklės</a>
-                <a href="#" class="brand-logo right"><img class="" src="img/logo.png" alt="logotipas"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a class="" href="index1.php">   <h5>Pagrindinis2</h5> </a></li>
-                    <li><a class="" href=" index.php">    <h5>Pagrindinis </h5> </a></li>
-                    <li><a class="" href=" shop.php">     <h5>Parduotuvė  </h5> </a></li>
-                    <li><a class="" href=" apie.php">     <h5>Apie mane   </h5></a></li>
-                    <li><a class="" href="kontaktai.php"><h5>Kontaktai   </h5></a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
-                </ul>
-            </div>
-        </nav>
-        
+    <?php //require_once("./load/navbar.html"); ?>
+    
+    <nav class="nav-extended">
+    <div class="nav-wrapper valign-wrapper grey lighten-3  ">
+      <a href="#" id="logo-text" class="brand-logo right">  Sapnų Gaudyklės</a>
+      <a href="#" class="brand-logo right"><img class="" src="img/logo.png" alt="logotipas"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a class="" href="index1.php">   <h5>Pagrindinis2</h5> </a></li>
+      <li><a class="" href=" index.php">    <h5>Pagrindinis </h5> </a></li>
+      <li><a class="" href=" shop.php">     <h5>Parduotuvė  </h5> </a></li>
+      <li><a class="" href=" apie.php">     <h5>Apie mane   </h5></a></li>
+      <li><a class="" href="kontaktai.php"><h5>Kontaktai   </h5></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+    <!-- <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div> -->
+  </nav>
+
+    
     </div>
     <!-- NAV SECTION END  ******************************************** -->
            <!-- alertas sekmingo siuntimo atveju -->
-           <?php if (isset($_SESSION["isiuntimas"])) {    ?>
-           
-           <div class="<?php echo 'card-panel' ?> green lighten-3 center" >
-                <h5> <?php echo "Jūsų žinutė buvo išsųsta" ?> </h5>
-                
-            </div>
-            
-           <?php }?>
-           
+           <div class="alert alert-success text-center" role="alert">
+                        Jūsų žinutė buvo išsųsta
+           </div>
+    
 
     <section class="container about-section">
         <div class="row">
-            <div class="col m6">
+            <div class="col m6 ">
                 <h2 class="center">Susisiekite</h2>
-                <!-- Fomrm start ============================================================== -->
-                <form class="" action='#' method="post">
+                <div class="row">
+                    <div class="col m12">
+                        <form class="" action='#' method="post">
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">account_circle</i>
@@ -70,7 +74,7 @@ require_once("./load/headK.html");    ?>
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">create</i>  
-                                    <textarea id="textarea1" class="materialize-textarea" name="zinute" ></textarea>
+                                    <textarea id="textarea1" class="materialize-textarea" name="zinute" required></textarea>
                                     <label for="textarea1">Jūsų pranešimas</label>
                                 </div>
                             </div>
@@ -85,31 +89,33 @@ require_once("./load/headK.html");    ?>
                             <div id="isiustas"></div>
 
                         </form>
-                <!-- Fomrm end ============================================================== -->
-                        
-
-            </div>  
+                    </div>
+                </div>    
+            <!-- </div>   -->
             
             <?php 
-                if (isset($_SESSION["isiuntimas"])) { session_destroy();   }
+                if (isset($_SESSION["isiuntimas"])) {  session_destroy();  }
 
                 if (isset($_POST["elpastas"])) { 
                     include("./php/email.php");  
-                    
+                    //   session_start();
                     //   $_SESSION["isiuntimas"] = 1;  
                     }
             ?> 
     
-            <div class="col m6 grey lighten-2">
+           
+             
+            
+            <div class="col m6">
                 <div id="map"></div>
                 <div class="input-field col s12">
                                 <i class="material-icons prefix">create</i>  
                                 <textarea id="textarea1" class="materialize-textarea" name="zinute" required></textarea>
                                 <label for="textarea1">Jūsų pranešimas</label>
-            </div>
+                </div>
 
-        </div>
-        
+            </div>
+        <!-- </div> -->
     </section>
 
     <section class="row">
@@ -157,13 +163,12 @@ require_once("./load/headK.html");    ?>
     </div>
 </footer>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1xBXtQo2-VpKXYMxJzlwGnPal8Cs6bDY&callback=initMap" async defer></script>
-
 
 <!-- map kontaktu pslpiui -->
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1xBXtQo2-VpKXYMxJzlwGnPal8Cs6bDY&callback=initMap" async defer></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <!-- materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

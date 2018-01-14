@@ -6,8 +6,8 @@
 // @import "dataCSS";
 
 
-$mano_spalva: rgba(53, 53, 53, 0.555);
-$nav_border_spalva: rgb(179, 179, 179);
+$spalva_tamsiai_juoda: rgb(117, 116, 116);
+$nav_border_spalva: rgb(201, 201, 201);
 $nav_spalva: rgb(235, 235, 235);
 
 
@@ -62,7 +62,7 @@ body {
 //  TOP SECTION START  ******************************************** -->
  .top-section {
     height: 90vh;
-    background-color: $mano_spalva;
+    // background-color: $mano_spalva;
     position: relative;
     overflow: hidden;
     
@@ -99,6 +99,25 @@ body {
  .nav-container {
     padding-left: 0;
     padding-right: 0;
+    
+    // kontaktai materialize logo 
+    .nav-wrapper {
+
+        #logo-text {
+            right: 150px;
+            color: $spalva_tamsiai_juoda;
+        }
+        .brand-logo {
+            padding-top: 20px;
+        }
+        img {
+        height: 100%;
+        }
+        ul > li h5 {
+            color: $spalva_tamsiai_juoda;
+        }
+    }
+    
     .navbar {
         // border: 1px solid $nav_border_spalva;
         background-color: $nav_spalva;
@@ -113,8 +132,8 @@ body {
     }
 
     img {
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
     }
 
 } 

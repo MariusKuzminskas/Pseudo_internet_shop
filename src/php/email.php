@@ -62,13 +62,15 @@
 
             
         
-         //   $mail->send();
+        //   $mail->send();
         
 
         
         
          $_SESSION["isiuntimas"] = 1;
-       // echo 'Message has been sent';
+         header("Refresh:0");
+        //  location.reload();
+    //    echo 'Message has been sent';
     } catch (Exception $e) {
        // echo 'Klaida, seni kazko pridirbai.';
        // echo 'Mailer Error: ' . $mail->ErrorInfo;
