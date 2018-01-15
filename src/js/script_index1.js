@@ -46,19 +46,28 @@ function isPriekioIGala() {
     $('.additional-images-row').append(pirmasImg);
 };
 
-$('img').on("click", function () {
-    isPriekioIGala();
+// $('img').on("click", function () {
+//     isPriekioIGala();
     
-})
+// })
 // setInterval (isPriekioIGala, 4000);
+var delay = 6000;
+function kvepuoti() {
+        $(".footerImg").animate({left: '-=50px', width: '+=100px'}, "3000");
+        $(".footerImg").animate({left: '+=50px', width: '-=100px'}, "5000");
+        delay =  (Math.floor((Math.random() * 10) + 1)) * 1000;
+        console.log(delay);
+}
+
+// random nr
+setInterval(kvepuoti, delay );
 
 
-///$('.additional-images-row').on("click",
 
 
+   // console.log(delay);
 
 
-//
 
 
 

@@ -100,13 +100,9 @@ require_once("./load/headK.html");    ?>
                     }
             ?> 
     
-            <div class="col m6 grey lighten-2">
-                <div id="map"></div>
-                <div class="input-field col s12">
-                                <i class="material-icons prefix">create</i>  
-                                <textarea id="textarea1" class="materialize-textarea" name="zinute" required></textarea>
-                                <label for="textarea1">Jūsų pranešimas</label>
-            </div>
+            <div class="col m6 ">
+                <div class="map" > <img class="" src="./img/port-thumb/9.jpg" alt="logotipas"> </div>
+                
 
         </div>
         

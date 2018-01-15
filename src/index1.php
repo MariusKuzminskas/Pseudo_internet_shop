@@ -37,7 +37,7 @@
         <div class="row mt-3">
             <div class="col-lg-8 offset-2">
                 <div class="main-image-container">
-                    <img class="w-100" src="./img/cover.jpg" alt="Cover Image">
+                    <img class="w-100 super-pic" src="./img/cover.jpg" alt="Cover Image">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
         
         
         <div class="div d-flex justify-content-center ">
-            <img class="" src="./img/footer.jpg" alt="" >
+            <img class="footerImg" src="./img/footer.jpg" alt="" >
         </div>
             
         

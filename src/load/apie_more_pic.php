@@ -3,12 +3,12 @@ include("../php/dbConnection.php");
 
 $picCountNew = $_POST['picCountNew'];
 
-$limit = [ 4, 2, 3 ];
+
 $sql = "SELECT * FROM apie_foto_ajax LIMIT $picCountNew";
 $result = mysqli_query($prisijungimas, $sql);
 
 //var_dump($result);
-if (mysqli_fetch_assoc($result)) {
+
     while ($dbEilute = mysqli_fetch_assoc($result)) { 
         // $dbEilute['klase'];
         // echo "<br>";
@@ -20,6 +20,6 @@ if (mysqli_fetch_assoc($result)) {
 
 <?php 
     } //end of for
-}
+
 
 ?>

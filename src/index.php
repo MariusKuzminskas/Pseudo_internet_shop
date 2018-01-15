@@ -98,11 +98,7 @@
         <!-- REVIEW SECTION START  ******************************************** -->
         <div class="container comments-section my-4 position-relative">
             <h2 class="text-center mb-4" >Ką apie mus sako žmonės?</h2>
-            <div class="btn-container d-flex justify-content-between align-content-center">
-                    <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                    <button class="btn btn-outline-dark mx-3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-            </div>
-            
+                        
             <div class="comments-container d-flex justify-content-center">
             <iframe class="fb-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbagalinga%2Fposts%2F10210257610744488%3A0&width=500" width="500" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><div>
             <iframe class="fb-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fagne.suchodolskyte%2Fposts%2F1648690111808810%3A0&width=500" width="500" height="354" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>

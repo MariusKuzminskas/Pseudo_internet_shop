@@ -309,7 +309,7 @@ footer {
 
 // Kontaktai 
 
-#map {
+.map {
     height: 100%;
     @include boxShadow();
   }
@@ -334,10 +334,7 @@ footer {
 
 
 // INDEX1.php
-.nav-container1 {
-    // border-bottom: 1px solid rgb(0, 0, 0);
 
-}
 
 .carousel-container {
     
@@ -360,9 +357,6 @@ footer {
 .main1-container {
     .navbar {
         background-color: white;
-        
+     
     }
-
-
-
 }
