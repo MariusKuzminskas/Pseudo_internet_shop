@@ -6,7 +6,7 @@
     $kliento_telefonas = $_POST['telefonas'];
     $kliento_elpastas = $_POST['elpastas'];
     $kliento_zinute = $_POST['zinute'];
-
+    
 
     // Import PHPMailer classes into the global namespace
     // These must be at the top of your script, not inside a function
@@ -64,6 +64,23 @@
         
         //   $mail->send();
         
+        // sekmingai isiustas emailas irasomas i duomenu baze kaip atsargine kopija
+
+        include('./php/dbConnection.php');
+
+        // apsisaugome nuo kodo injekcijos
+        $kliento_vardas = mysqli_real_escape_string($prisijungimas, $kliento_vardas);
+        $kliento_telefonas = mysqli_real_escape_string($prisijungimas, $kliento_telefonas);
+        $kliento_elpastas = mysqli_real_escape_string($prisijungimas, $kliento_elpastas);
+        $kliento_zinute = mysqli_real_escape_string($prisijungimas, $kliento_zinute);
+        
+        $sql_textas = "INSERT INTO emailai VALUES ('', '$kliento_vardas', '$kliento_telefonas', '$kliento_elpastas', '$kliento_zinute')";
+        // echo $sql_textas; 
+        $rezultatas = mysqli_query($prisijungimas, $sql_textas);
+
+        
+
+
 
         
         
