@@ -5,7 +5,7 @@
     <!-- NAV SECTION START  ******************************************** -->
     <div class="trigger"></div>        
     <div class="container-fluid nav-container">
-        <?php require_once("./load/navbar.html");  ?>                
+        <?php require_once("./load/navbar.php");  ?>                
     </div>
     <!-- NAV SECTION END  ******************************************** -->
     <!-- MAIN item section start  ******************************************** -->

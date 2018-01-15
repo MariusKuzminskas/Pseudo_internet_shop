@@ -295,6 +295,7 @@ footer {
     img {
         @include imgScale();
         min-height: 525px;
+        min-width: 100%;
     }
     
     .sale-container {
@@ -341,7 +342,7 @@ footer {
 .carousel-container {
     
     width: 80%;
-    // overflow: hidden;
+    overflow: hidden;
     .additional-images-row {
         
         div {

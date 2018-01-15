@@ -1,20 +1,39 @@
 <?php 
 
-include('./php/dbFunctions.php');
+
+function getPrekes() {
+    $sql_textas = "SELECT * FROM shop_prekes";
+    //echo $sql_textas; 
+    // Liepti vykdyti musu sql texto query
+    $resultatas = mysqli_query( getPrisijungimas(), $sql_textas );
+    
+    if ($resultatas) {
+        // echo "<br> preke rasta <br>";
+        return $resultatas;
+    } else {
+        echo "ERROR:  preke nerasta <br>";
+        return null;
+    }
+}
+
+
 
 
 $prekes = getPrekes(); // gauname vis1 msql masyva
+$kiek_prekiu = 11;
 $vienaprekesEile = mysqli_fetch_assoc($prekes); // pavercia viena eilute is  msql masyvo ir pavercia assoc array
 
 
 if($vienaprekesEile != NULL) {
-            while ( $vienaprekesEile ) {
+            // while ( $vienaprekesEile ) {
+            for ($i=0; $i < $kiek_prekiu; $i++) { 
+                    
                 $vienaprekesEile = mysqli_fetch_assoc($prekes);
                 
        
 // $idedit = 
 
-$item_ID = ($vienaprekesEile['id']) - 1;
+$item_ID = ($vienaprekesEile['id']);
 $bs_col = $vienaprekesEile['bs_col'];
 $linkas = "preke.php?id=$item_ID";
 $img_src = $vienaprekesEile['img_src'];

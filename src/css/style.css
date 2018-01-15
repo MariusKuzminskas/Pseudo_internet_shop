@@ -162,7 +162,8 @@ footer {
 .items-section img {
   transition: 1.2s;
   transform: scale(1.15);
-  min-height: 525px; }
+  min-height: 525px;
+  min-width: 100%; }
   .items-section img:hover {
     transform: scale(1); }
 
@@ -187,7 +188,8 @@ footer {
   right: 5px; }
 
 .carousel-container {
-  width: 80%; }
+  width: 80%;
+  overflow: hidden; }
   .carousel-container .additional-images-row div {
     flex-shrink: 0;
     width: 16%; }
