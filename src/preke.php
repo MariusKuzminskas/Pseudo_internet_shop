@@ -8,23 +8,38 @@
         <?php require_once("./load/navbar.php");  ?>                
     </div>
     <!-- NAV SECTION END  ******************************************** -->
+    
+    <?php   
+     
+    $id = $_GET['id'];
+
+    $sql = "SELECT * FROM shop_prekes WHERE id=$id";
+    $dataRowMsql = mysqli_query($prisijungimas, $sql);
+    
+    $dataRow = mysqli_fetch_assoc($dataRowMsql);
+    
+    //var_dump($dataRow);
+    
+    ?>
+    
+    
     <!-- MAIN item section start  ******************************************** -->
     <section class="container item-container">
         <!-- MAIN item row start  ******************************************** -->
         <div class="row mt-4">
             <div class="col-lg-6">
                 <div class="img-container">
-                    <img class="img-fluid" src="img/1920/5.jpg" alt="Sapnu gaudyklės nuotrauka">
+                    <img class="img-fluid" src="img/1920/<?php echo $id ?>.jpg" alt="Sapnu gaudyklės nuotrauka">
                 </div>
             </div>
             <div class="col-lg-6">
                 <article class="about-item-container">
                     <div class="item-name-container">
-                        <h2>Sapnų Gaudyklė #1</h2>
+                        <h2>Sapnų Gaudyklė #<?php echo $id  ?></h2>
                     </div>
                     <div class="price-container">
                         <p>
-                            <s class="disabled">30eur </s> 20 eur</p>
+                        <?php if ($dataRow['sale'] == 1) { echo "<s class='disabled'>" . $dataRow['full_price'] . "eur </s>"; } ?> <?php print($dataRow['price']); ?> eur</p>
                     </div>
                     <div class="paragraph-container">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quas. Ipsum doloribus enim sed iste
