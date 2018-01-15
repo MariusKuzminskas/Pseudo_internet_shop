@@ -82,6 +82,15 @@ function validateEmail(pastas) {
 
 
 
+// AJAX apie mane.php
+
+var picRowCount = 2;
+$('#loadBtn').click(function() {
+    picRowCount = picRowCount + 2
+    $('#loadMore').load("./load/apie_more_pic.php", {
+        picCountNew: picRowCount
+    });
+});
 
 
 
