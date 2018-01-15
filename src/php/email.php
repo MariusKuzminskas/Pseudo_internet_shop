@@ -62,7 +62,7 @@
 
             
         
-        //   $mail->send();
+          $mail->send();
         
         // sekmingai isiustas emailas irasomas i duomenu baze kaip atsargine kopija
 
@@ -85,8 +85,8 @@
         
         
          $_SESSION["isiuntimas"] = 1;
-         header("Refresh:0");
-        //  location.reload();
+         //header("Refresh:0");
+         echo "<meta http-equiv='refresh' content='0'>";
     //    echo 'Message has been sent';
     } catch (Exception $e) {
        // echo 'Klaida, seni kazko pridirbai.';
