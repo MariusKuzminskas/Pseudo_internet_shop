@@ -29,7 +29,7 @@ $item_full_price = $vienaprekesEile['full_price'];
         <a href=<?php print($linkas); ?>>
             <img class="img-fluid" src=<?php print($img_src); ?> alt="Sapnu gaudyklės nuotrauka">
             <div class="sale-container bg-dark text-light  px-1 ">
-                <p class="blockqoute my-auto text-uppercase font-weight-bold"> <?php echo "Išpardavimas" ?></p>
+                <p class="blockqoute my-auto text-uppercase font-weight-bold"> <?php if ($sale == 1) { echo "Išpardavimas"; } ?></p>
             </div>
     </div>
     </a>
@@ -39,7 +39,7 @@ $item_full_price = $vienaprekesEile['full_price'];
         </div>
         <div class="price-container ">
             <p>
-            <?php echo "<s class='disabled'>" . $item_full_price. "eur </s>"?> <?php print($item_price); ?> eur</p>
+            <?php if ($sale == 1) { echo "<s class='disabled'>" . $item_full_price. "eur </s>"; } ?> <?php print($item_price); ?> eur</p>
         </div>
     </div>
 </article>
