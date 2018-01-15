@@ -105,6 +105,23 @@ $('#blogBtn').click(function() {
     $('#blogas').load('./load/load_blog_posts.php');
 });
 
+// $('#isrikiavimas').select(function() {
+//     $('#items_row').load('./load/shop_preke.php')
+// });
+var opt;
+$('#isrikiavimas').on("change", function() {
+    var opt = $(this).val();
+    if (opt == 2) {
+        $('#items_row').load('./load/shop_prekeDESC.php');
+    } else if (opt == 3) {
+        $('#items_row').load('./load/shop_prekeASC.php');
+    } else if (opt == 1) {
+        $('#items_row').load('./load/shop_preke.php');
+    }
+
+})
+// console.log(opt);
+
 
 
 

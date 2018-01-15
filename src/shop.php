@@ -38,9 +38,9 @@
                         </div>
                         <div class="col-auto">
                             <!-- <label class="mr-sm-2" for="inlineFormCustomSelect">Rūšiuoti</label> -->
-                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="isrikiavimas">
                                 <!-- <option selected>Choose...</option> -->
-                                <option value="1">Naujausi viršuje</option>
+                                <option value="1" selected>Naujausi viršuje</option>
                                 <option value="2">Pigiausi viršuje</option>
                                 <option value="3">Brangiausi viršuje</option>
                             </select>
@@ -56,7 +56,7 @@
     <!-- Selection section END  ******************************************** -->
     <!-- Items section Start  ******************************************** -->
     <section class="container items-section">
-        <div class="row">
+        <div id=items_row class="row">
         <?php include("./load/shop_preke.php") ?>
             
         </div>

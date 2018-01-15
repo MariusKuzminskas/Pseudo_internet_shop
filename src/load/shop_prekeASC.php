@@ -1,16 +1,14 @@
 <?php 
 
-if (!isset($prisijungimas)) {
-    include("../php/dbConnection.php");
-} 
+include('../php/dbConnection.php');
 
-
-$sql_textas = "SELECT * FROM shop_prekes";
+$sql_textas = "SELECT * FROM shop_prekes ORDER BY price DESC";
 $prekes = mysqli_query( $prisijungimas, $sql_textas );
 
 while ($vienaprekesEile = mysqli_fetch_assoc($prekes)) { // pavercia viena eilute is  msql masyvo ir pavercia assoc array
 
        
+
 
 $item_ID = ($vienaprekesEile['id']);
 $bs_col = $vienaprekesEile['bs_col'];
