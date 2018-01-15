@@ -3,7 +3,7 @@ include("../php/dbConnection.php");
 
 $picCountNew = $_POST['picCountNew'];
 
-
+$limit = [ 4, 2, 3 ];
 $sql = "SELECT * FROM apie_foto_ajax LIMIT $picCountNew";
 $result = mysqli_query($prisijungimas, $sql);
 
