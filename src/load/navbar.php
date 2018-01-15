@@ -2,23 +2,12 @@
 
 require('./php/dbConnection.php');
 
-function getMenuNames() {
-    $sql_textas = "SELECT * FROM menu";
-    //echo $sql_textas; 
-    // Liepti vykdyti musu sql texto query
-    $resultatas = mysqli_query( getPrisijungimas(), $sql_textas );
-    
-    if ($resultatas) {
-        // echo "<br> preke rasta <br>";
-        return $resultatas;
-    } else {
-        echo "ERROR:  menu nerasta <br>";
-        return null;
-    }
-}
+
+$sql_textas = "SELECT * FROM menu";
+$resultatas = mysqli_query( $prisijungimas, $sql_textas );
 
 // Gauname SQL Objekta
-$menuPavadinmaiSQL = getMenuNames();
+$menuPavadinmaiSQL = $resultatas;
 $i=0;
 // paverciame i assoc masyva
 $menuPavadinmai = mysqli_fetch_assoc($menuPavadinmaiSQL);

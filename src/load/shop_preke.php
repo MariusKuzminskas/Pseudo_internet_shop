@@ -2,10 +2,11 @@
 
 
 function getPrekes() {
+    global $prisijungimas;
     $sql_textas = "SELECT * FROM shop_prekes";
     //echo $sql_textas; 
     // Liepti vykdyti musu sql texto query
-    $resultatas = mysqli_query( getPrisijungimas(), $sql_textas );
+    $resultatas = mysqli_query( $prisijungimas, $sql_textas );
     
     if ($resultatas) {
         // echo "<br> preke rasta <br>";
