@@ -1,36 +1,14 @@
 <?php 
 
 
-function getPrekes() {
-    global $prisijungimas;
-    $sql_textas = "SELECT * FROM shop_prekes";
-    //echo $sql_textas; 
-    // Liepti vykdyti musu sql texto query
-    $resultatas = mysqli_query( $prisijungimas, $sql_textas );
-    
-    if ($resultatas) {
-        // echo "<br> preke rasta <br>";
-        return $resultatas;
-    } else {
-        echo "ERROR:  preke nerasta <br>";
-        return null;
-    }
-}
+$sql_textas = "SELECT * FROM shop_prekes";
+$prekes = mysqli_query( $prisijungimas, $sql_textas );
 
 
-
-
-$prekes = getPrekes(); // gauname vis1 msql masyva
 $kiek_prekiu = 11;
-$vienaprekesEile = mysqli_fetch_assoc($prekes); // pavercia viena eilute is  msql masyvo ir pavercia assoc array
 
+while ($vienaprekesEile = mysqli_fetch_assoc($prekes)) { // pavercia viena eilute is  msql masyvo ir pavercia assoc array
 
-if($vienaprekesEile != NULL) {
-            // while ( $vienaprekesEile ) {
-            for ($i=0; $i < $kiek_prekiu; $i++) { 
-                    
-                $vienaprekesEile = mysqli_fetch_assoc($prekes);
-                
        
 // $idedit = 
 
@@ -68,6 +46,6 @@ $item_price = $vienaprekesEile['price'];
 <?php
 
     } //while end
-} //if end
+
 
 ?>

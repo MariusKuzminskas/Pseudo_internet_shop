@@ -13,7 +13,7 @@ $i=0;
 $menuPavadinmai = mysqli_fetch_assoc($menuPavadinmaiSQL);
 // is kiekvienos lenteles eilute pasiimu pavadinima is name stulpelio ir sudedu i nauja masyva kuri panaudosiu navigacijos meniu reiksmems
 if ($menuPavadinmai !== NULL) {
-    while ($i <= 4) {
+    while ($i <= 5) {
         $menuPavadinmai = mysqli_fetch_assoc($menuPavadinmaiSQL);
         // print_r($menuPavadinmai['name']);
         // echo "<br>";
@@ -48,6 +48,7 @@ if ($menuPavadinmai !== NULL) {
             <a class="nav-item nav-link mx-3" href=" shop.php">     <h5><?php echo $menu[2] ?>  </h5> </a>
             <a class="nav-item nav-link mx-3" href=" apie.php">     <h5><?php echo $menu[3] ?>  </h5></a>
             <a class="nav-item nav-link mx-3" href="kontaktai.php"> <h5><?php echo $menu[4] ?>  </h5></a>
+            <a class="nav-item nav-link mx-3" href="blog.php"> <h5><?php echo $menu[5] ?>  </h5></a>
             <!-- <a class="nav-item nav-link d-inline-block" href="#home"> <i class="fa fa-bars text-dark d-inline-block" aria-hidden="true"></i> </a> -->
         </div>
     </div>
