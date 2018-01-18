@@ -5,5 +5,6 @@ body {
 .height-20v {
   height: 20vh; }
 
-.border-t {
-  border-top: 2px solid #c7c6c6; }
+.div-row {
+  width: 50%;
+  border-top: 2px solid #838383; }

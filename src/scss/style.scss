@@ -12,21 +12,17 @@ body {
     font-family: $main_font;
 }
 
-.images-row {
-    .row {
-        img {
-            //width: 16%;
-        }
-    }
-}
+
 
 // index php
 .height-20v {
     height: 20vh;
 }
 
-.border-t {
-    border-top: 2px solid rgb(199, 198, 198);
+.div-row {
+    width: 50%;
+    border-top: 2px solid rgb(131, 131, 131);
 }
+
 
 
