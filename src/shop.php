@@ -16,6 +16,14 @@
         <?php include('./components/item.php'); ?>    
         <!-- item row end -->
         <div class="div-row-long my-2 mx-auto"> </div>
+        <!-- Item row -->
+        <?php include('./components/item.php'); ?>    
+        <!-- item row end -->
+        <div class="div-row-long my-2 mx-auto"> </div>
+        <!-- Item row -->
+        <?php include('./components/item.php'); ?>    
+        <!-- item row end -->
+        <div class="div-row-long my-2 mx-auto"> </div>
 
     </section>
     

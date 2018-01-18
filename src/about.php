@@ -12,7 +12,7 @@
     <section class="container-fluid about-container color-dark-grey">
         <article class="bg-grey py-4">
             <div class="container">
-                <p class="h4 ">Sapnų gaudyklę galite užsisakyti susisiekę el.paštu gaudykles@gmail.com, arba skiltyje > kontaktai </p></article>
+                <p class="h3 ">Sapnų gaudyklę galite užsisakyti susisiekę el.paštu gaudykles@gmail.com, arba skiltyje > kontaktai </p></article>
             </div>       
             <div class="container">
                 <article class="bg-light py-3"> <p class="blockquote mx-auto"><span class="" > Sapnų gaudyklė</span> – ne tik jaukus ir originalus miegamojo interjero akcentas. Legendos skelbia, kad šis amuletas apsaugo nuo blogų, piktų minčių ir dvasių, nemalonių sapnų, padeda greičiau užmigti ir miegančiajam siunčia ramius, spalvotus ir džiugius linkėjimus iš sapnų pasaulio, o kai kurie žmonės pasikabina ją savo automobiliuose kaip laimę nešantį ženklą. Sapnų gaudykles daromos iš natūralių medžiagų. Kiekvienas darbas individualus ir vienetinis, gaminamas tik su gera intencija. </p></article>
@@ -33,7 +33,7 @@
                     </div>
                     <!-- img col -->
                     <div class="col-lg-6">
-                        <img class="rounded img-fluid  " src="./img/crop/9.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img class="rounded-circle img-fluid  " src="./img/crop/9.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                 </div>
             </div>
