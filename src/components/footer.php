@@ -6,13 +6,13 @@
             </div>
             <div class="col-lg-3">
                 <a href="http://www.facebook.com/gaudykles" target="_blank">
-                <i class="fab fa-facebook-square h1 pr-3"></i>
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
                 </a>
                 <a href="http://www.instagram.com/sapnu.gaudykles">
-                <i class="fab fa-instagram h1 pr-3"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                 </a>
                 <a href="#">
-                <i class="fa fa-envelope h1 pr-3"></i>
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="col-md-6 mb-2">

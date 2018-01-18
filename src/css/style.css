@@ -12,8 +12,17 @@ body {
     width: 80%;
     border-top: 2px solid #838383; }
 
+i {
+  height: 30px; }
+
 .bg-grey {
   background-color: #f1f1f1; }
 
 .color-dark-grey {
   color: #494949; }
+
+.about-container li {
+  list-style: none; }
+  .about-container li h6 {
+    line-height: 2rem;
+    margin-bottom: 8px; }

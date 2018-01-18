@@ -9,8 +9,8 @@
             <div class="navbar-nav mx-2  ">
                 <a class="nav-item mx-2 nav-link active" href="./index.php">  <h5>Pagrindinis</h5>    <span class="sr-only">(current)</span></a>
                 <a class="nav-item mx-2 nav-link" href="./shop.php">          <h5>Parduotuvė </h5> </a>
-                <a class="nav-item mx-2 nav-link" href="./about.php">                <h5>Apie Mane  </h5> </a>
-                <a class="nav-item mx-2 nav-link" href="./contacts.php">           <h5>Kontaktai  </h5> </a>
+                <a class="nav-item mx-2 nav-link" href="./about.php">         <h5>Apie Gaudykles  </h5> </a>
+                <a class="nav-item mx-2 nav-link" href="./contacts.php">      <h5>Kontaktai  </h5> </a>
             </div>
         </div>
     </nav>
