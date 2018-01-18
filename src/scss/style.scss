@@ -22,6 +22,23 @@ body {
 .div-row {
     width: 50%;
     border-top: 2px solid rgb(131, 131, 131);
+    &-long {
+        width: 80%;
+        border-top: 2px solid rgb(131, 131, 131);
+    }
+}
+
+
+// shop
+
+.bg-grey {
+    background-color: rgb(241, 241, 241);
+}
+
+.color {
+    &-dark-grey {
+        color: rgb(73, 73, 73)
+    }
 }
 
 
