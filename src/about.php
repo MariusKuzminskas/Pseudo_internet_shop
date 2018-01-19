@@ -24,11 +24,11 @@
                     <div class="col-lg-6 my-auto">
                         <h3 class="pb-3">KĄ GALIME SUTEIKTI?</h3>
                         <ul class="fa-ul" >
-                            <li><h6><i class="fa-li fa fa-check-square"></i>Greitą ir kokybišką aptarnavimą</h6></li>
-                            <li><h6><i class="fa-li fa fa-check-square"></i>Jau padarytų gaudyklių pardavimą</h6></li>
-                            <li><h6><i class="fa-li fa fa-check-square"></i>Individualių užsakymų kūrimą</h6></li>
-                            <li><h6><i class="fa-li fa fa-check-square"></i>Sapnų gaudyklių gamybos seminarus</h6></li>
-                            <li><h6><i class="fa-li fa fa-check-square"></i>Šventėms/renginiams sapnų gaudyklių nuomą</h6></li>
+                            <li><i class="fa-li fa fa-check-square fa-2x"></i><h5>Greitą ir kokybišką aptarnavimą</h5></li>
+                            <li><i class="fa-li fa fa-check-square fa-2x"></i><h5>Jau padarytų gaudyklių pardavimą</h5></li>
+                            <li><i class="fa-li fa fa-check-square fa-2x"></i><h5>Individualių užsakymų kūrimą</h5></li>
+                            <li><i class="fa-li fa fa-check-square fa-2x"></i><h5>Sapnų gaudyklių gamybos seminarus</h5></li>
+                            <li><i class="fa-li fa fa-check-square fa-2x"></i><h5>Šventėms/renginiams sapnų gaudyklių nuomą</h5></li>
                         </ul>
                     </div>
                     <!-- img col -->

@@ -10,7 +10,13 @@
     
     <!-- Main -->
     <section class="container main-contacts-container">
-        
+     
+    <section class="instagram-posts mx-auto">
+        <?php include('./components/instafeed.php'); ?>    
+    </section>
+
+
+
 
     </section>
     

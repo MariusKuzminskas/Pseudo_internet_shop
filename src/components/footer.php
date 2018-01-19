@@ -15,20 +15,17 @@
                 <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                 </a>
             </div>
-            <div class="col-md-6 mb-2">
-                <h5>instagram</h5>
-                <div class=" " id="instafeed"></div>
-            </div>
-            <div class="col-lg-12 mb-2">
-                
-                <div class=" " id="instafeed"></div>
-            </div>
+            
+            
         </section>
 </footer>
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
+<script src="./js/instafeed.min.js"></script>
+
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
