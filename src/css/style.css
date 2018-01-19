@@ -16,6 +16,12 @@ footer .fa {
   color: #2e2e2e;
   margin-right: 7px; }
 
+.shop-container img {
+  opacity: 0.65; }
+  .shop-container img:hover {
+    transition-duration: 1s;
+    opacity: 1; }
+
 .bg-grey {
   background-color: #f1f1f1; }
 

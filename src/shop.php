@@ -9,21 +9,14 @@
     </section>
     
     <!-- Main -->
-    <section class="container main-container">
+    <section class="container shop-container">
         <h4 class="text-center py-5" >Įsigykite sapnų gaudyklę</h4>
     
         <!-- Item row -->
         <?php include('./components/item.php'); ?>    
         <!-- item row end -->
         <div class="div-row-long my-2 mx-auto"> </div>
-        <!-- Item row -->
-        <?php include('./components/item.php'); ?>    
-        <!-- item row end -->
-        <div class="div-row-long my-2 mx-auto"> </div>
-        <!-- Item row -->
-        <?php include('./components/item.php'); ?>    
-        <!-- item row end -->
-        <div class="div-row-long my-2 mx-auto"> </div>
+       
 
     </section>
     

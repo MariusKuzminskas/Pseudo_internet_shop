@@ -27,7 +27,7 @@
                                     <input type="tel" name="" id="" class="form-control form-control-lg" placeholder="telefonas">
                                 </div>
                                 <div class="col">
-                                    <input type="email" name="" id="" class="form-control form-control-lg" placeholder="elektroninis paštas">
+                                    <input type="email" name="" id="" class="form-control form-control-lg" placeholder="el. paštas">
                                 </div>
                             </div>
                             <div class="form-group mt-3">
