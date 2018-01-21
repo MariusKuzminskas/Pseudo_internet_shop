@@ -1,21 +1,12 @@
 <footer class="container" >
         <section class="row pt-3 border ">
             <div class="col-lg-3">
-                <a href="http://www.facebook.com/gaudykles" target="_blank">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="http://www.instagram.com/sapnu.gaudykles">
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="col-lg-6 pl-5 d-flex flex-column justify-content-center">
-        <h6 class="text-center"> &copy 2018 Sapnų gaudyklės</h6>
-        <!-- <div><a href="#"> <img class="d-block " src="./img/logo-150.png" alt="sapnų gaudyklės Logotipas"> </a></div>  -->
-    </div>
-            
+                <?php include('social.php'); ?>
+            </div>
+            <div class="col-lg-6 pl-5 d-flex flex-column justify-content-center">
+                <h6 class="text-center"> &copy 2018 Sapnų gaudyklės</h6>
+                <!-- <div><a href="#"> <img class="d-block " src="./img/logo-150.png" alt="sapnų gaudyklės Logotipas"> </a></div>  -->
+            </div>
         </section>
 </footer>
 

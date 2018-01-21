@@ -12,7 +12,7 @@
     <section class="container main-contacts-container">
     
     <div class="row my-4">
-        <div class="col-md-5">
+        <div class="col-md-6">
             <div class="form-container">
                 <div class="card bd-primary text-center">
                     <div class="card-body">
@@ -39,10 +39,35 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-7">
-        <img class="rounded img-fluid  " src="./img/crop/14.jpg" alt="sapnų gaudyklės nuotrauka">
+        <!-- Dešiny šonas -->
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-center" >Sek mus</h4>
+                        <a class="d-block bg-secondary text-center" href="http://www.facebook.com/gaudykles" target="_blank">
+                        Facebook'e <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="http://www.instagram.com/sapnu.gaudykles">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </a>
+                </div>
+            </div>
         </div>
-    </div> 
+    </div> <!-- Row end -->
+
+    <div class="row two-pic-row">
+        <div class="col-lg-6">
+            <img class="img-fluid w-100" src="./img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka">
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid w-100" src="./img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka">
+        </div>
+        
+    </div>
+    
     
     
     
