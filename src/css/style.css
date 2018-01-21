@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&subset=greek-ext");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&subset=latin-ext");
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Poppins", sans-serif; }
+
+nav .nav-item {
+  font-variant: small-caps; }
+
+nav .fa {
+  color: #4b4b4b;
+  margin-right: 7px; }
 
 .height-20v {
   height: 20vh; }
@@ -17,10 +25,13 @@ footer .fa {
   margin-right: 7px; }
 
 .shop-container img {
-  opacity: 0.65; }
+  opacity: 0.65;
+  transform: scale(0.7);
+  transition-duration: 1s; }
   .shop-container img:hover {
     transition-duration: 1s;
-    opacity: 1; }
+    opacity: 1;
+    transform: scale(0.9); }
 
 .bg-grey {
   background-color: #f1f1f1; }

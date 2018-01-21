@@ -46,9 +46,7 @@
     
     
     
-    <section class="instagram-posts">
-        <?php include('./components/instafeed.php'); ?>    
-    </section>
+    
 
 
 

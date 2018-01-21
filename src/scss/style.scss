@@ -1,12 +1,12 @@
 // Main Sass File
 
-//roboto font
+//fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&subset=greek-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&subset=latin-ext');
 
 //font-family: 'Roboto', sans-serif;
-
-$main_font: 'Roboto', sans-serif;
+//font-family: 'Poppins', sans-serif;
+$main_font: 'Poppins', sans-serif;
 
 body {
     font-family: $main_font;
@@ -15,6 +15,18 @@ body {
 
 
 // index php
+nav {
+    .nav-item {
+        font-variant: small-caps;
+    }
+    
+    
+    .fa {
+        color: rgb(75, 75, 75);
+        margin-right: 7px;
+    }
+}
+
 .height-20v {
     height: 20vh;
 }
@@ -42,9 +54,12 @@ footer {
 .shop-container {
     img {
         opacity: 0.65;
+        transform: scale(0.7);
+        transition-duration: 1s;
         &:hover {
             transition-duration: 1s;
             opacity: 1;
+            transform: scale(0.9);
         }
     }
 }
