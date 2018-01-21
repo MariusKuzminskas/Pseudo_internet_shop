@@ -19,22 +19,29 @@ nav .fa {
   .div-row-long {
     width: 80%;
     border-top: 2px solid #838383; }
+  .div-row-light {
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6; }
+
+.promo-footer img {
+  height: 7rem; }
 
 footer .fa {
   color: #2e2e2e;
   margin-right: 7px; }
 
-.shop-container img {
-  opacity: 0.65;
-  transform: scale(0.7);
-  transition-duration: 1s; }
-  .shop-container img:hover {
-    transition-duration: 1s;
-    opacity: 1;
-    transform: scale(0.9); }
+.item-container .sale {
+  top: 10%;
+  right: 2px; }
 
-.bg-grey {
+.item-container img {
+  width: 100%; }
+
+.bg-grey-grey {
   background-color: #f1f1f1; }
+
+.bg-grey-white {
+  background-color: #fff; }
 
 .color-dark-grey {
   color: #494949; }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Sapnų Gaudyklės</a>
         <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHide" aria-controls="navbarHide" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,3 +25,4 @@
             </div>
         </div>
     </nav>
+    <div class="div-row-light"></div>

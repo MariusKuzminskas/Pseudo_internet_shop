@@ -2,7 +2,7 @@
 
 <body class="bg-light" >
     <!-- top logo -->
-    <div class=""> <img class="d-block mx-auto" src="./img/logo-150.png" alt="sapnų gaudyklės Logotipas"> </div>
+    <?php include('./components/logo.php'); ?>
     <!-- NAV -->
     <section class="container navigation-section">
         <?php include('./components/navigation.php'); ?>    
@@ -13,9 +13,27 @@
         <h4 class="text-center py-5" >Įsigykite sapnų gaudyklę</h4>
     
         <!-- Item row -->
-        <?php include('./components/item.php'); ?>    
+        <div class="row">
+            <div class="col-lg-4">
+                <article class="item-container ">
+                    <!-- img container -->
+                    <div class="img-container position-relative">
+                        <img src="./img/port-thumb/9.jpg" alt="sapnu gaudyklės nuotrauka">
+                        <p class="sale bg-dark text-light blockquote text-uppercase px-1 position-absolute"> išpardavimas</p>
+                    </div>
+                    <!-- under img container -->
+                    <div class="under-img-container text-center">
+                        <h4>pavadinimas</h4>
+                        <p>20 eur</p>
+                        <a href="#" class="btn btn-outline-dark" >Pirkti</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+
         <!-- item row end -->
-        <div class="div-row-long my-2 mx-auto"> </div>
+        
        
 
     </section>

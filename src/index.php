@@ -2,11 +2,13 @@
 
 <body class="bg-light" >
     <!-- top logo -->
-    <div class=""> <img class="d-block mx-auto" src="./img/logo-150.png" alt="sapnų gaudyklės Logotipas"> </div>
+    <?php include('./components/logo.php'); ?>
     <!-- NAVIGATION -->
     <section class="container navigation-section">
         <?php include('./components/navigation.php'); ?>    
+        
     </section>
+
     <!-- Carousel -->
     <section class="hero-img-carousel-section container mt-2">
     <div class="row py-5">
@@ -26,6 +28,9 @@
     
     
     <!-- Footer and scripts -->
+    <section class="bg-white promo-footer">
+        <img class="img-fluid d-block mx-auto" src="./img/footer.jpg" alt="gaudyklių pristatymas nemokakas visoje lietuvoje">
+    </section>
     <?php include('./components/footer.php'); ?>    
 
     

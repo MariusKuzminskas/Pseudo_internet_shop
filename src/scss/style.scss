@@ -38,6 +38,16 @@ nav {
         width: 80%;
         border-top: 2px solid rgb(131, 131, 131);
     }
+    &-light {
+        width: 100%;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+}
+
+.promo-footer {
+    img {
+        height: 7rem;
+    }
 }
 
 // footer 
@@ -51,20 +61,25 @@ footer {
 
 
 // shop
-.shop-container {
+.item-container {
+    .sale {
+        top:10%;
+        right: 2px;
+        
+    }
     img {
-        opacity: 0.65;
-        transform: scale(0.7);
-        transition-duration: 1s;
-        &:hover {
-            transition-duration: 1s;
-            opacity: 1;
-            transform: scale(0.9);
-        }
+        width: 100%;
     }
 }
+
+
 .bg-grey {
-    background-color: rgb(241, 241, 241);
+    &-grey {
+        background-color: rgb(241, 241, 241);
+    }
+    &-white {
+        background-color: #fff;
+    }
 }
 
 .color {

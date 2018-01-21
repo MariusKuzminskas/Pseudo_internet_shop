@@ -2,7 +2,7 @@
 
 <body class="bg-light" >
     <!-- top logo -->
-    <div class=""> <img class="d-block mx-auto" src="./img/logo-150.png" alt="sapnų gaudyklės Logotipas"> </div>
+    <?php include('./components/logo.php'); ?>
     <!-- NAV -->
     <section class="container navigation-section">
         <?php include('./components/navigation.php'); ?>    
