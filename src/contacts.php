@@ -41,18 +41,20 @@
         </div>
         <!-- Dešiny šonas -->
         <div class="col-md-6">
-            <div class="row">
+            <div class="row social-row">
                 <div class="col-12">
-                    <h4 class="text-center" >Sek mus</h4>
-                        <a class="d-block bg-secondary text-center" href="http://www.facebook.com/gaudykles" target="_blank">
-                        Facebook'e <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                    <h4 class="text-center mb-4" >Sek mus</h4>
+                    <div class="social-box ">
+                        <a class="d-block border rounded text-center color-dark-grey" href="http://www.facebook.com/gaudykles" target="_blank">
+                        Facebook <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
                         </a>
-                        <a href="http://www.instagram.com/sapnu.gaudykles">
-                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        <a class="d-block border rounded text-center color-dark-grey" href="http://www.instagram.com/sapnu.gaudykles">
+                        Instagram    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                         </a>
-                        <a href="#">
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <a class="d-block border rounded text-center color-dark-grey" href="#">
+                        Rašyk laišką  <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                         </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,14 +70,6 @@
         
     </div>
     
-    
-    
-    
-    
-
-
-
-
     </section>
     
     

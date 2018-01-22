@@ -37,10 +37,10 @@ footer .fa {
 .item-container img {
   width: 100%; }
 
-.bg-grey-grey {
+.bg-grey {
   background-color: #f1f1f1; }
 
-.bg-grey-white {
+.bg-white {
   background-color: #fff; }
 
 .color-dark-grey {
@@ -54,3 +54,7 @@ footer .fa {
 
 .main-contacts-container img {
   opacity: 0.7; }
+
+.main-contacts-container .social-row a {
+  padding-top: 10px;
+  padding-bottom: 15px; }
