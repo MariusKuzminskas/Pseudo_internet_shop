@@ -28,8 +28,10 @@
     
     
     <!-- Footer and scripts -->
-    <section class="bg-white promo-footer">
-        <img class="img-fluid d-block mx-auto" src="./img/footer.jpg" alt="gaudyklių pristatymas nemokakas visoje lietuvoje">
+    <section class="container bg-white promo-footer ">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2"><img class="img-fluid d-block" src="./img/footer.jpg" alt="gaudyklių pristatymas nemokakas visoje lietuvoje"></div>
+        </div>
     </section>
     <?php include('./components/footer.php'); ?>    
 

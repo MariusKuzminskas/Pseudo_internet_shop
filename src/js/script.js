@@ -7,7 +7,7 @@ $(document).ready(function() {
     limit: 6,
     accessToken : '201846217.1677ed0.c490befc2ce9451ebfcdd077ddc2d85d',
     sortBy: 'most-recent',
-    template: '<a href="{{link}}"><img class="insta-img" src="{{image}}" /></a>'
+    template: '<div class="col-lg-2 col-md-4 col-sm-6"><a href="{{link}}"><img class="insta-img d-block mx-auto" src="{{image}}" /></a></div>'
 
 });
 feed.run();
