@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&subset=greek-ext');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&subset=latin-ext');
 
+@import "mixins";
+
 //font-family: 'Roboto', sans-serif;
 //font-family: 'Poppins', sans-serif;
 $main_font: 'Poppins', sans-serif;
@@ -57,6 +59,11 @@ footer {
 
 // shop
 .item-container {
+    overflow: hidden;
+    
+    .pic-container {
+        overflow: hidden;
+    }
     .sale {
         top:10%;
         right: 2px;
@@ -64,7 +71,13 @@ footer {
     }
     img {
         width: 100%;
+        @include imgScale();
     }
+}
+.sale {
+    top:10%;
+    right: 2px;
+    z-index: 100;
 }
 
 
