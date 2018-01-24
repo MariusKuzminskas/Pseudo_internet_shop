@@ -27,18 +27,19 @@ footer .fa {
   color: #2e2e2e;
   margin-right: 7px; }
 
-.item-container {
+.shop-item-container {
   overflow: hidden; }
-  .item-container .pic-container {
+  .shop-item-container .pic-container {
     overflow: hidden; }
-  .item-container .sale {
+  .shop-item-container .sale {
     top: 10%;
     right: 2px; }
-  .item-container img {
+  .shop-item-container img {
     width: 100%;
     transition: 1.2s;
-    transform: scale(1.15); }
-    .item-container img:hover {
+    transform: scale(1.15);
+    height: 20rem; }
+    .shop-item-container img:hover {
       transform: scale(1); }
 
 .sale {

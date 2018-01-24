@@ -58,7 +58,7 @@ footer {
 
 
 // shop
-.item-container {
+.shop-item-container {
     overflow: hidden;
     
     .pic-container {
@@ -72,6 +72,8 @@ footer {
     img {
         width: 100%;
         @include imgScale();
+        height: 20rem;
+         
     }
 }
 .sale {
@@ -95,6 +97,8 @@ footer {
         color: rgb(73, 73, 73)
     }
 }
+
+//item.php
 
 
 

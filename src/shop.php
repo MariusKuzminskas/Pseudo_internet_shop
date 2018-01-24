@@ -10,7 +10,7 @@
     
     <!-- Main -->
     <section class="container shop-container">
-        <h4 class="text-center py-5" >Įsigykite sapnų gaudyklę</h4>
+        <!-- <h4 class="text-center py-5" >Įsigykite sapnų gaudyklę</h4> -->
     
 
 

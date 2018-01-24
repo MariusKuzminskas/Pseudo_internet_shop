@@ -33,7 +33,7 @@
                             echo "išpardavimas";    
                         }?>
                 </p>
-                <img class="rounded img-fluid  " src="./img/crop/1.jpg" alt="sapnų gaudyklės nuotrauka"> </div>
+                <img class="rounded img-fluid" src="./img/pard/<?php echo $preke['image']?>.jpg" alt="sapnų gaudyklės nuotrauka"> </div>
             <!-- Text column -->
             <div class="col-lg-6">
                 <!-- Pavadinimas -->
