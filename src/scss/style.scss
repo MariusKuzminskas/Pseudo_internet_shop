@@ -45,6 +45,11 @@ nav {
         border-bottom: 1px solid rgb(230, 230, 230);
     }
 }
+.promo-footer {
+    img {
+        height: 7rem;
+    }
+}
 
 
 // footer 
@@ -111,14 +116,28 @@ footer {
             margin-bottom: 6px;
         }
     }
+    .four-pic-row {
+        img {
+            @include imgShadow();
+        }
+    }
+
 }
 
 
 // kontaktai
 .main-contacts-container {
     img {
+        @include imgShadow();
         opacity: 0.7;
+        width: 100%;
+        transition: 1s;
+        &:hover {
+            transition: 1s;
+            opacity: 1;
+        }
     }
+    
     .social-row {
         a {
             padding-top: 10px;
@@ -126,5 +145,13 @@ footer {
 
         }
     }
-}   
+}
+
+.contact-text {
+    a {
+        //text-decoration: none;
+        color: rgb(8, 100, 0);
+        @include textShadow();
+    }
+}
 

@@ -62,7 +62,7 @@
 
             
         
-        // $mail->send();
+        $mail->send();
         
         // sekmingai isiustas emailas irasomas i duomenu baze kaip atsargine kopija
 

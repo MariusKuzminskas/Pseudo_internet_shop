@@ -23,6 +23,9 @@ nav .fa {
     width: 100%;
     border-bottom: 1px solid #e6e6e6; }
 
+.promo-footer img {
+  height: 7rem; }
+
 footer .fa {
   color: #2e2e2e;
   margin-right: 7px; }
@@ -62,9 +65,28 @@ footer .fa {
     line-height: 2rem;
     margin-bottom: 6px; }
 
+.about-container .four-pic-row img {
+  transition: 1.2s; }
+  .about-container .four-pic-row img:hover {
+    filter: drop-shadow(0px 0px 15px black); }
+
 .main-contacts-container img {
-  opacity: 0.7; }
+  transition: 1.2s;
+  opacity: 0.7;
+  width: 100%;
+  transition: 1s; }
+  .main-contacts-container img:hover {
+    filter: drop-shadow(0px 0px 15px black); }
+  .main-contacts-container img:hover {
+    transition: 1s;
+    opacity: 1; }
 
 .main-contacts-container .social-row a {
   padding-top: 10px;
   padding-bottom: 15px; }
+
+.contact-text a {
+  color: #086400;
+  transition: 2s; }
+  .contact-text a:hover {
+    text-shadow: 10px 10px 8px black; }

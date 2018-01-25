@@ -12,7 +12,7 @@
     <?php if (isset($_SESSION["isiuntimas"])) {    ?>
            
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <p class="blockquote text-center"><?php echo "Jūsų žinutė buvo išsųsta" ?></p>
+            <p class="blockquote text-center"><?php echo "Jūsų žinutė buvo išsiųsta" ?></p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -20,7 +20,7 @@
             
     <?php }?>
     </section>
-    
+
     <!-- Main -->
     <section class="container main-contacts-container">
     
@@ -30,7 +30,7 @@
                 <div class="card bd-primary text-center">
                     <div class="card-body">
                         <h3>Susisiekite</h3>
-                        <p>Užpildykite formą ir mes kuo greičiau atsakysime.</p>
+                        <p>Kreipkitės ir atsakysime per 1 valandą</p>
                         <form action="#" method="post">
                             <div class="form-group">
                                 <input type="text" name="vardas" id="" class="form-control form-control-lg" placeholder="Vardas Pavardė">
@@ -90,10 +90,10 @@
 
     <div class="row two-pic-row">
         <div class="col-lg-6">
-            <img class="img-fluid w-100" src="./img/crop/12.jpg" alt="Sapnu gaudyklės nuotrauka">
+            <img class="img-fluid w-100" src="./img/contacts/1-min.jpg" alt="Sapnu gaudyklės nuotrauka">
         </div>
         <div class="col-lg-6">
-            <img class="img-fluid w-100" src="./img/crop/13.jpg" alt="Sapnu gaudyklės nuotrauka">
+            <img class="img-fluid w-100" src="./img/contacts/2-min.jpg" alt="Sapnu gaudyklės nuotrauka">
         </div>
         
     </div>
