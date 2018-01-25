@@ -74,11 +74,52 @@
                 <!-- buy button -->
                 <div class="to-cart-container bg-grey row">
                     <div class="col-lg-12">
-                        <button class="btn btn-dark btn-lg blockquote mt-3 ">pirkti</button>
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-dark btn-lg blockquote mt-3" data-toggle="modal" data-target="#pirkti_forma">pirkti</button>
                     </div>
                 </div>    
             </div>
-        </article> 
+        </article>
+        
+    
+    
+       
+
+        <!-- Modal -->
+        <div class="modal fade" id="pirkti_forma" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Įsigyti šią sapnų gaudyklę</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>Norėdami įsigyti šią sapnų gaudyklę, perveskite bankiniu pavedimu 20 eur į saskaitą LT9000000444555. Gaudyklė bus jums išsiųsta iškarto gavus pavedimą. Užpildykite rezervacijos lentelę</p> 
+                    <!-- form -->
+                    <div class="form-group">
+                        <input type="text" name="vardas" id="" class="form-control form-control-lg" placeholder="Vardas Pavardė">
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="tel" name="telefonas" id="" class="form-control form-control-lg" placeholder="telefonas">
+                        </div>
+                        <div class="col">
+                            <input type="email" name="elpastas" id="" class="form-control form-control-lg" required  placeholder="el. paštas">
+                        </div>
+                    </div>
+               
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Rezervuoti gaudyklę</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    
 
 <div class="height-20v"></div>
 <!-- <div class="div-row-long my-3 mx-auto"> </div> -->
