@@ -1,7 +1,16 @@
-<?php require('./php/dbConnection.php'); 
-         //create query
-                
-        $query = 'SELECT * FROM prekes';
+<?php require('../php/dbConnection.php'); 
+        //create query
+        
+        //checking if call to generate items is from ajax f-ion
+        if (isset($_POST['sortType'])) {
+            
+            if ($_POST['sortType'] == 2) {
+                $query = 'SELECT * FROM prekes ORDER BY kaina ASC';
+                } else if ($_POST['sortType'] == 3) {
+                    $query = 'SELECT * FROM prekes ORDER BY kaina DESC';
+                } else { $query = 'SELECT * FROM prekes'; }
+        
+        } else { $query = 'SELECT * FROM prekes'; }
        
         
 

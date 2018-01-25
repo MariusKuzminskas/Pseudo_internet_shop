@@ -41,7 +41,7 @@
 
     
     
-  
-    <script src="./js/script.js"></script>
+    <script src="./js/instafeed.min.js"></script>
+    <script src="./js/index_script.js"></script>
 </body>
 </html>

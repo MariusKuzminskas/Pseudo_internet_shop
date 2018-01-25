@@ -93,7 +93,7 @@
             <img class="img-fluid w-100" src="./img/contacts/1-min.jpg" alt="Sapnu gaudyklės nuotrauka">
         </div>
         <div class="col-lg-6">
-            <img class="img-fluid w-100" src="./img/contacts/2-min.jpg" alt="Sapnu gaudyklės nuotrauka">
+            <img class="img-fluid w-100 d-lg-block d-none" src="./img/contacts/2-min.jpg" alt="Sapnu gaudyklės nuotrauka">
         </div>
         
     </div>

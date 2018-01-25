@@ -14,7 +14,7 @@
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 
-<script src="./js/instafeed.min.js"></script>
+
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

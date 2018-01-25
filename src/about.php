@@ -1,6 +1,6 @@
 <?php include('./load/head.php'); ?>
 
-<body class="bg-light" >
+<body id="about" class="bg-light" >
     <!-- top logo -->
     <?php include('./components/logo.php'); ?>
     <!-- NAV -->
@@ -61,7 +61,7 @@
                     </div>
                     <!-- img col -->
                     <div class="col-lg-6">
-                        <img class="rounded-circle img-fluid  " src="./img/crop/9.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img class="rounded-circle img-fluid  " src="./img/about/5-min.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                 </div>
             </div>

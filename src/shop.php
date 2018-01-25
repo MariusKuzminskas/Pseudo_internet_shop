@@ -7,6 +7,9 @@
     <section class="container navigation-section">
         <?php include('./components/navigation.php'); ?>    
     </section>
+    <section class="container navigation-section">
+        <?php include('./components/selection.php'); ?>    
+    </section>
     
     <!-- Main -->
     <section class="container shop-container">
@@ -15,8 +18,8 @@
 
 
         <!-- Item row -->
-        <div class="row">
-        <?php include('./components/generate_items.php'); ?>
+        <div id="items_row" class="row">
+        <?php // include('./components/generate_items.php'); ?>
         
             
         </div>
@@ -40,7 +43,8 @@
 
     
     
-  
+    
+    <script src="./js/sort.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
