@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    // bootstrap alert dismiss
+    $('.alert').alert()
+
     instafeed.js 
     var feed = new Instafeed({
     get: 'user',

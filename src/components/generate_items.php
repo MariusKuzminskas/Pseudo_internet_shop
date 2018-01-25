@@ -36,4 +36,12 @@
                 </article>
             </div>
 
-        <?php }; // end while   ?>
+        <?php }; // end while  
+        
+        //free result
+        mysqli_free_result($result);
+        
+        // close connection
+        mysqli_close($conn);
+        
+        ?>

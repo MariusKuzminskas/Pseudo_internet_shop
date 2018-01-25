@@ -62,27 +62,27 @@
 
             
         
-          $mail->send();
+        // $mail->send();
         
         // sekmingai isiustas emailas irasomas i duomenu baze kaip atsargine kopija
 
         include('./php/dbConnection.php');
 
         // apsisaugome nuo kodo injekcijos
-        $kliento_vardas = mysqli_real_escape_string($prisijungimas, $kliento_vardas);
-        $kliento_telefonas = mysqli_real_escape_string($prisijungimas, $kliento_telefonas);
-        $kliento_elpastas = mysqli_real_escape_string($prisijungimas, $kliento_elpastas);
-        $kliento_zinute = mysqli_real_escape_string($prisijungimas, $kliento_zinute);
+        $kliento_vardas = mysqli_real_escape_string($conn, $kliento_vardas);
+        $kliento_telefonas = mysqli_real_escape_string($conn, $kliento_telefonas);
+        $kliento_elpastas = mysqli_real_escape_string($conn, $kliento_elpastas);
+        $kliento_zinute = mysqli_real_escape_string($conn, $kliento_zinute);
         
         $sql_textas = "INSERT INTO emailai VALUES ('', '$kliento_vardas', '$kliento_telefonas', '$kliento_elpastas', '$kliento_zinute')";
         // echo $sql_textas; 
-        $rezultatas = mysqli_query($prisijungimas, $sql_textas);
+        $emailToDB = mysqli_query($conn, $sql_textas);
 
+        //free result
+        //mysqli_free_result($emailToDB);
         
-
-
-
-        
+        // close connection
+        mysqli_close($conn);
         
          $_SESSION["isiuntimas"] = 1;
          //header("Refresh:0");
