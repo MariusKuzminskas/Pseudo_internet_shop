@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&subset=greek-ext");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700&subset=latin-ext");
 body {
   font-family: "Poppins", sans-serif; }
 
@@ -12,6 +12,15 @@ nav .fa {
 
 .height-20v {
   height: 20vh; }
+
+.font-w200 {
+  font-weight: 200; }
+
+.font-w300 {
+  font-weight: 300; }
+
+.overHid {
+  overflow: hidden; }
 
 .div-row {
   width: 50%;
@@ -40,15 +49,9 @@ footer .fa {
   .shop-item-container img {
     width: 100%;
     transition: 1.2s;
-    transform: scale(1.15);
-    height: 20rem; }
+    transform: scale(1.15); }
     .shop-item-container img:hover {
       transform: scale(1); }
-
-.sale {
-  top: 10%;
-  right: 2px;
-  z-index: 100; }
 
 .bg-grey {
   background-color: #f1f1f1; }
@@ -58,6 +61,11 @@ footer .fa {
 
 .color-dark-grey {
   color: #494949; }
+
+.item-container .sale {
+  top: 10%;
+  right: 20px;
+  z-index: 100; }
 
 .about-container li {
   list-style: none; }

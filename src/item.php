@@ -39,22 +39,23 @@
                             echo "išpardavimas";    
                         }?>
                 </p>
-                <img class="rounded img-fluid" src="./img/pard/<?php echo $preke['image']?>.jpg" alt="sapnų gaudyklės nuotrauka"> </div>
+                <img class="rounded img-fluid" src="./img/1920/<?php echo $preke['image']?>.jpg" alt="sapnų gaudyklės nuotrauka"> </div>
             <!-- Text column -->
             <div class="col-lg-6">
                 <!-- Pavadinimas -->
                 <div class="item-name-container ">
-                    <h4 class="h2 bg-light" ><?php echo $preke['pavadinimas']?></h4>
+                    <h4 class="h2 bg-light font-w300" ><?php echo $preke['pavadinimas']?></h4>
                 </div>
                 <!-- kaina -->
-                <div class="price-container bg-light h4 mb-3"><p>
+                <div class="price-container bg-light h4 mb-3">
+                    <p class="font-w300">
                 <?php if ($preke['sale']) {
-                    echo '<s class="text-muted">'.$preke['kaina_buvusi'].' eur</s>'; } ?>    
+                    echo '<s class="text-muted ">'.$preke['kaina_buvusi'].' eur</s>'; } ?>    
                 <?php echo $preke['kaina']?> eur</p></div>
                 <!-- Matmenys -->
                 <div class="row bg-grey  matmenys-container">
                     <div class="col-4">
-                        <p><strong> Matmenys: </strong></p>
+                        <p class="text-uppercase ">Matmenys:</p>
                     </div>
                     <div class="col">
                         <p>ilgis: <?php echo $preke['ilgis']?>cm</p>
@@ -64,7 +65,7 @@
                 <!-- Medziagos -->
                 <div class="row medziagos-container bg-light">
                     <div class="col-4">
-                    <div><p><strong> Medžiagos: </strong></p></div>    
+                    <div><p class="text-uppercase">Medžiagos:</p></div>    
                     </div>
                     <div class="col">
                         <p><?php echo $preke['medziagos_1']?></p>
@@ -90,7 +91,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Įsigyti šią sapnų gaudyklę</h5>
+                <h5 class="modal-title font-weight-normal" id="exampleModalLongTitle">Įsigyti šią sapnų gaudyklę</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -99,21 +100,21 @@
                <p>Norėdami įsigyti šią sapnų gaudyklę, perveskite bankiniu pavedimu 20 eur į saskaitą LT9000000444555. Gaudyklė bus jums išsiųsta iškarto gavus pavedimą. Užpildykite rezervacijos lentelę</p> 
                     <!-- form -->
                     <div class="form-group">
-                        <input type="text" name="vardas" id="" class="form-control form-control-lg" placeholder="Vardas Pavardė">
+                        <input type="text" name="vardas" id="" class="form-control" placeholder="Vardas Pavardė">
                     </div>
                     <div class="form-row">
                         <div class="col">
-                            <input type="tel" name="telefonas" id="" class="form-control form-control-lg" placeholder="telefonas">
+                            <input type="tel" name="telefonas" id="" class="form-control" placeholder="telefonas">
                         </div>
                         <div class="col">
-                            <input type="email" name="elpastas" id="" class="form-control form-control-lg" required  placeholder="el. paštas">
+                            <input type="email" name="elpastas" id="" class="form-control" required  placeholder="el. paštas">
                         </div>
                     </div>
                
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Uždaryti</button>
                 <button type="button" class="btn btn-primary">Rezervuoti gaudyklę</button>
             </div>
             </div>

@@ -2,7 +2,7 @@
 
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&subset=greek-ext');
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700&subset=latin-ext');
 
 @import "mixins";
 
@@ -31,6 +31,16 @@ nav {
 
 .height-20v {
     height: 20vh;
+}
+
+.font-w200 {
+    font-weight: 200;
+}
+.font-w300 {
+    font-weight: 300;
+}
+.overHid {
+    overflow: hidden;
 }
 
 .div-row {
@@ -77,15 +87,11 @@ footer {
     img {
         width: 100%;
         @include imgScale();
-        height: 20rem;
+        // height: 20rem;
          
     }
 }
-.sale {
-    top:10%;
-    right: 2px;
-    z-index: 100;
-}
+
 
 
 .bg {
@@ -104,8 +110,14 @@ footer {
 }
 
 //item.php
-
-
+.item-container {
+    
+    .sale {
+        top:10%;
+        right: 20px;
+        z-index: 100;
+    }
+}
 
 // about
 .about-container {
@@ -152,6 +164,12 @@ footer {
         //text-decoration: none;
         color: rgb(8, 100, 0);
         @include textShadow();
+    }
+}
+
+.two-pic-row {
+    img {
+        
     }
 }
 

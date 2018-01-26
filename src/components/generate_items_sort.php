@@ -27,7 +27,7 @@
                 <article class="shop-item-container ">
                     <!-- img container -->
                     <div class="img-container position-relative">
-                        <a href="item.php?id=<?php echo $preke['id']?>"><img src="./img/pard/<?php echo $preke['image']?>.jpg" alt="sapnu gaudyklės nuotrauka"></a>
+                        <a href="item.php?id=<?php echo $preke['id']?>"><img src="./img/port-thumb/<?php echo $preke['image']?>.jpg" alt="sapnu gaudyklės nuotrauka"></a>
                         <p class="sale bg-dark text-light blockquote text-uppercase px-1 position-absolute">
                         <?php if ($preke['sale']) {
                             echo "išpardavimas";    
@@ -43,7 +43,7 @@
                             echo '<s class="text-muted">'.$preke['kaina_buvusi'].' eur</s>'; 
                         } ?>                     
                         <?php echo $preke['kaina']?> eur</p>
-                        <a href="#" class="btn btn-outline-dark" >Pirkti</a>
+                        <a href="item.php?id=<?php echo $preke['id']?>" class="btn btn-outline-dark" >Plačiau...</a>
                     </div>
                 </article>
             </div>

@@ -1,4 +1,4 @@
-<footer class="container" >
+<footer class="container mt-5" >
         <section class="row pt-3 border ">
             <div class="col-lg-3">
                 <?php include('social.php'); ?>

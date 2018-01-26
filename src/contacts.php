@@ -89,8 +89,10 @@
     </div> <!-- Row end -->
 
     <div class="row two-pic-row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 ">
+           <div class="img-container-cont ">
             <img class="img-fluid w-100" src="./img/contacts/1-min.jpg" alt="Sapnu gaudyklės nuotrauka">
+            </div>
         </div>
         <div class="col-lg-6">
             <img class="img-fluid w-100 d-lg-block d-none" src="./img/contacts/2-min.jpg" alt="Sapnu gaudyklės nuotrauka">
