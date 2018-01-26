@@ -4,7 +4,7 @@
                 <?php include('social.php'); ?>
             </div>
             <div class="col-lg-6 pl-5 d-flex flex-column justify-content-center">
-                <h6 class="text-center"> &copy 2018 Sapnų gaudyklės</h6>
+                <h6 class="text-center font-weight-light"> &copy 2018 Sapnų gaudyklės</h6>
                 <!-- <div><a href="#"> <img class="d-block " src="./img/logo-150.png" alt="sapnų gaudyklės Logotipas"> </a></div>  -->
             </div>
         </section>

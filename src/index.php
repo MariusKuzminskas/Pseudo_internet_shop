@@ -34,7 +34,7 @@
         </div>
     </section> -->
     <section class="container bg-white promo-footer ">
-        <div class="w-100"><img class="img-fluid d-block mx-auto" src="./img/footer.jpg" alt="gaudyklių pristatymas nemokakas visoje lietuvoje"></div>
+        <div class="w-100"><img class="img-fluid d-block mx-auto" src="./img/footer.png" alt="gaudyklių pristatymas nemokakas visoje lietuvoje"></div>
         
     </section>
     <?php include('./components/footer.php'); ?>    
