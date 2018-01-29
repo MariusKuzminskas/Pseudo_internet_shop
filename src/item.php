@@ -76,7 +76,7 @@
                 <div class="to-cart-container bg-grey row">
                     <div class="col-lg-12">
                         <!-- Button trigger modal -->
-                        <button class="btn btn-dark btn-lg blockquote mt-3" data-toggle="modal" data-target="#pirkti_forma">pirkti</button>
+                        <button class="btn btn-dark btn-lg blockquote mt-3" data-toggle="modal" data-target="#pirkti_forma1">pirkti</button>
                     </div>
                 </div>    
             </div>
@@ -86,8 +86,8 @@
     
        
 
-        <!-- Modal -->
-        <div class="modal fade" id="pirkti_forma" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <!-- Modal 1 -->
+        <div class="modal fade" id="pirkti_forma1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -97,12 +97,28 @@
                 </button>
             </div>
             <div class="modal-body">
-               <p>Norėdami įsigyti šią sapnų gaudyklę, perveskite bankiniu pavedimu 20 eur į saskaitą LT9000000444555. Gaudyklė bus jums išsiųsta iškarto gavus pavedimą. Užpildykite rezervacijos lentelę</p> 
+               <!-- <p>Norėdami įsigyti šią sapnų gaudyklę, perveskite bankiniu pavedimu 20 eur į saskaitą LT9000000444555. Gaudyklė bus jums išsiųsta iškarto gavus pavedimą. Užpildykite rezervacijos lentelę</p>  -->
                     <!-- form -->
                     <div class="form-group">
-                        <input type="text" name="vardas" id="" class="form-control" placeholder="Vardas Pavardė">
+                        <label for="pristatymoBudas">Pasirinkite pristatymo būdą:</label>
+                        <select class="form-control" id="pristatymoBudas">
+                        <option value="option1" selected="selected" >Nemokamas siuntimas Lietuvos paštu</option>
+                        <option value="option2">Pristatymas kurjeriu 1-2 d.d.: €5.00</option>
+                        <option value="option3">Atsiimti OMNIVA paštomate 1-2 d.d. €1.00</option>
+                    </select>
                     </div>
-                    <div class="form-row">
+                    <div class="row">
+                        <div class="col mb-1"> <p class="text-center">Kaina: <span id="priceShip">20</span>eur</p> </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <input type="text" name="vardas" id="" class="form-control" placeholder="Vardas">
+                        </div>
+                        <div class="col">
+                            <input type="text" name="pavarde" id="" class="form-control" required  placeholder="Pavardė">
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
                         <div class="col">
                             <input type="tel" name="telefonas" id="" class="form-control" placeholder="telefonas">
                         </div>
@@ -110,16 +126,34 @@
                             <input type="email" name="elpastas" id="" class="form-control" required  placeholder="el. paštas">
                         </div>
                     </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <input type="text" name="miestas" id="" class="form-control" required placeholder="miestas">
+                        </div>
+                        <div class="col">
+                            <input type="text" name="gatve" id="" class="form-control" required  placeholder="gatvė ir namo nr">
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col-6">
+                            <input type="text" name="postCode" id="" class="form-control"  placeholder="Pašto kodas">
+                        </div>
+                        <!-- <div class="col">
+                            <input type="text" name="gatve" id="" class="form-control" required  placeholder="gatvė ir namo nr">
+                        </div> -->
+                    </div>
                
             
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Uždaryti</button>
-                <button type="button" class="btn btn-primary">Rezervuoti gaudyklę</button>
+                <button type="button" class="btn btn-primary">Toliau..</button>
             </div>
             </div>
         </div>
         </div>
+
+        
     
 
 <div class="height-20v"></div>

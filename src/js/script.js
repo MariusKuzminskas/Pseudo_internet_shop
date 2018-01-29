@@ -11,8 +11,25 @@ $(document).ready(function() {
         });
     })
 
-    
-    
+    var originalPrice = $('#priceShip').text();
+    originalPrice = parseInt(originalPrice);
+    console.log("gauta kaina: ", originalPrice);
+    $('#pristatymoBudas').change(function() {
+        let pasirinkta = $('#pristatymoBudas').val();
+        console.log("gaunam: ", pasirinkta);
+        
+        
+        let shipPrice2 = 5;
+        let shipPrice3 = 1;
+        if (pasirinkta == "option2") {
+            let price = originalPrice + shipPrice2;
+            $('#priceShip').html(price);
+        } else if (pasirinkta == "option3") {
+            let price = originalPrice + shipPrice3;
+            $('#priceShip').html(price);
+        }
+        
+    })
     
     
 
