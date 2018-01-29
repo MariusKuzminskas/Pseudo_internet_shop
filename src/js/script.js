@@ -11,9 +11,16 @@ $(document).ready(function() {
         });
     })
 
+    //getting price from the page
     var originalPrice = $('#priceShip').text();
     originalPrice = parseInt(originalPrice);
     console.log("gauta kaina: ", originalPrice);
+    
+    var classPrice = $('#priceShip').text();
+    classPrice = parseInt(classPrice);
+    console.log("klases kaina: ", classPrice);
+    
+    // listening to a change in a delivery selection box
     $('#pristatymoBudas').change(function() {
         let pasirinkta = $('#pristatymoBudas').val();
         console.log("gaunam: ", pasirinkta);
@@ -24,9 +31,11 @@ $(document).ready(function() {
         if (pasirinkta == "option2") {
             let price = originalPrice + shipPrice2;
             $('#priceShip').html(price);
+            $('.priceShip').html(price);
         } else if (pasirinkta == "option3") {
             let price = originalPrice + shipPrice3;
             $('#priceShip').html(price);
+            $('.priceShip').html(price);
         }
         
     })

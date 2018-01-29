@@ -108,7 +108,8 @@
                     </select>
                     </div>
                     <div class="row">
-                        <div class="col mb-1"> <p class="text-center">Kaina: <span id="priceShip">20</span>eur</p> </div>
+                        <div class="col-3 mb-1"> <p class="text-center">ID: <?php echo $preke['id']?></p> </div>
+                        <div class="col mb-1"> <p class="text-center">Galutinė suma: <span id="priceShip"><?php echo $preke['kaina']?></span>eur</p> </div>
                     </div>
                     <div class="form-row mb-2">
                         <div class="col">
@@ -138,16 +139,20 @@
                         <div class="col-6">
                             <input type="text" name="postCode" id="" class="form-control"  placeholder="Pašto kodas">
                         </div>
-                        <!-- <div class="col">
-                            <input type="text" name="gatve" id="" class="form-control" required  placeholder="gatvė ir namo nr">
-                        </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col"> 
+                            <p class="text-justify">Norėdami užsisakyti šią gaudyklė padarykite <span class="priceShip"><?php echo $preke['kaina']?></span> eur bankinį pavedimą
+                            į sąskaitą: <span class="font-weight-bold">LT497300010141118654</span> "Swedbank" 
+                            Kamilė Steponavičiūtė</p> 
+                        </div>
                     </div>
                
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Uždaryti</button>
-                <button type="button" class="btn btn-primary">Toliau..</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                <button type="button" class="btn btn-primary">Pirkti</button>
             </div>
             </div>
         </div>

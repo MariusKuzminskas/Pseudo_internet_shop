@@ -12,5 +12,5 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Sapnų Gaudyglės</title>
+    <title>Sapnų Gaudyklės</title>
 </head>
