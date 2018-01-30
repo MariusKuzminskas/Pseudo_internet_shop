@@ -28,20 +28,22 @@ $(document).ready(function() {
         
         let shipPrice2 = 5;
         let shipPrice3 = 1;
-        if (pasirinkta == "option2") {
+        if (pasirinkta == "kurjeris") {
             let price = originalPrice + shipPrice2;
             $('#priceShip').html(price);
             $('.priceShip').html(price);
-        } else if (pasirinkta == "option3") {
+        } else if (pasirinkta == "omniva") {
             let price = originalPrice + shipPrice3;
             $('#priceShip').html(price);
             $('.priceShip').html(price);
-        } else if (pasirinkta == "option1") {
+        } else if (pasirinkta == "nemokamas_siuntimas") {
             $('#priceShip').html(originalPrice);
             $('.priceShip').html(originalPrice);
         }
         
     })
+
+    
     
     
 

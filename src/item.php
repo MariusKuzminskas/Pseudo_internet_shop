@@ -1,4 +1,5 @@
-<?php include('./load/head.php'); ?>
+<?php   //session_start();
+        include('./load/head.php'); ?>
 
 <body class="bg-light" >
     <!-- top logo -->
@@ -109,70 +110,76 @@
         <div class="modal fade" id="pirkti_forma1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-normal" id="exampleModalLongTitle">Įsigyti šią sapnų gaudyklę</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-               <!-- <p>Norėdami įsigyti šią sapnų gaudyklę, perveskite bankiniu pavedimu 20 eur į saskaitą LT9000000444555. Gaudyklė bus jums išsiųsta iškarto gavus pavedimą. Užpildykite rezervacijos lentelę</p>  -->
-                    <!-- form -->
-                    <div class="form-group">
-                        <label for="pristatymoBudas">Pasirinkite pristatymo būdą:</label>
-                        <select class="form-control" id="pristatymoBudas">
-                        <option value="option1" selected="selected" >Nemokamas siuntimas Lietuvos paštu</option>
-                        <option value="option2">Pristatymas kurjeriu 1-2 d.d.: €5.00</option>
-                        <option value="option3">Atsiimti OMNIVA paštomate 1-2 d.d. €1.00</option>
-                    </select>
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-normal" id="exampleModalLongTitle">Įsigyti šią sapnų gaudyklę</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="confirm.php?id=<?php echo $preke['id']?>" method="post"> 
+                    <div class="modal-body">
+                        <!-- <p>Norėdami įsigyti šią sapnų gaudyklę, perveskite bankiniu pavedimu 20 eur į saskaitą LT9000000444555. Gaudyklė bus jums išsiųsta iškarto gavus pavedimą. Užpildykite rezervacijos lentelę</p>  -->
+                            <!-- form -->
+                        
+                        <div class="form-group">
+                            <label for="pristatymoBudas">Pasirinkite pristatymo būdą:</label>
+                            <select class="form-control" id="pristatymoBudas" name="postMethod">
+                            <option  value="nemokamas_siuntimas" selected="selected" >Nemokamas siuntimas Lietuvos paštu</option>
+                            <option  value="kurjeris">Pristatymas kurjeriu 1-2 d.d.: €5.00</option>
+                            <option  value="omniva">Atsiimti OMNIVA paštomate 1-2 d.d. €1.00</option>
+                        </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 mb-1"> <p class="text-center">ID: <?php echo $preke['id']?></p> </div>
+                            <div class="col mb-1"> <p class="text-center">Galutinė suma: <span id="priceShip"><?php echo $preke['kaina']?></span>eur</p> </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col">
+                                <input type="text" name="vardas" id="" class="form-control" placeholder="Vardas">
+                            </div>
+                            <div class="col">
+                                <input type="text" name="pavarde" id="" class="form-control" required value="Pavardenis" placeholder="Pavardė">
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col">
+                                <input type="tel" name="telefonas" id="" class="form-control" placeholder="telefonas">
+                            </div>
+                            <div class="col">
+                                <input type="email" name="elpastas" id="" class="form-control" required value="nereikia@gal.lt"  placeholder="el. paštas">
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col">
+                                <input type="text" name="miestas" id="" class="form-control" required value="Giedriai" placeholder="miestas">
+                            </div>
+                            <div class="col">
+                                <input type="text" name="gatve" id="" class="form-control" required value="Tauranu 5a"  placeholder="gatvė ir namo nr">
+                            </div>
+                        </div>
+                        <div class="form-row mb-2">
+                            <div class="col-6">
+                                <input type="text" name="postCode" id="" class="form-control"  placeholder="Pašto kodas">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"> 
+                                <p class="text-justify">Norėdami užsisakyti šią gaudyklė padarykite <span class="priceShip"><?php echo $preke['kaina']?></span> eur bankinį pavedimą
+                                į sąskaitą: <span class="font-weight-bold">LT497300010141118654</span> "Swedbank" 
+                                Kamilė Steponavičiūtė</p> 
+                            </div>
+                        </div>
+                        
+                    
                     </div>
-                    <div class="row">
-                        <div class="col-3 mb-1"> <p class="text-center">ID: <?php echo $preke['id']?></p> </div>
-                        <div class="col mb-1"> <p class="text-center">Galutinė suma: <span id="priceShip"><?php echo $preke['kaina']?></span>eur</p> </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+                        <!-- <button type="button" class="btn btn-primary">Pirkti</button> -->
+                        <input type="submit" class="btn btn-primary" name="button" value="Pirkti">
                     </div>
-                    <div class="form-row mb-2">
-                        <div class="col">
-                            <input type="text" name="vardas" id="" class="form-control" placeholder="Vardas">
-                        </div>
-                        <div class="col">
-                            <input type="text" name="pavarde" id="" class="form-control" required  placeholder="Pavardė">
-                        </div>
-                    </div>
-                    <div class="form-row mb-2">
-                        <div class="col">
-                            <input type="tel" name="telefonas" id="" class="form-control" placeholder="telefonas">
-                        </div>
-                        <div class="col">
-                            <input type="email" name="elpastas" id="" class="form-control" required  placeholder="el. paštas">
-                        </div>
-                    </div>
-                    <div class="form-row mb-2">
-                        <div class="col">
-                            <input type="text" name="miestas" id="" class="form-control" required placeholder="miestas">
-                        </div>
-                        <div class="col">
-                            <input type="text" name="gatve" id="" class="form-control" required  placeholder="gatvė ir namo nr">
-                        </div>
-                    </div>
-                    <div class="form-row mb-2">
-                        <div class="col-6">
-                            <input type="text" name="postCode" id="" class="form-control"  placeholder="Pašto kodas">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col"> 
-                            <p class="text-justify">Norėdami užsisakyti šią gaudyklė padarykite <span class="priceShip"><?php echo $preke['kaina']?></span> eur bankinį pavedimą
-                            į sąskaitą: <span class="font-weight-bold">LT497300010141118654</span> "Swedbank" 
-                            Kamilė Steponavičiūtė</p> 
-                        </div>
-                    </div>
-               
-            
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
-                <button type="button" class="btn btn-primary">Pirkti</button>
-            </div>
+                    
+                    
+                </form>
             </div>
         </div>
         </div>
