@@ -46,6 +46,10 @@ footer .fa {
   .shop-item-container .sale {
     top: 10%;
     right: 2px; }
+  .shop-item-container .sold {
+    top: 40%;
+    left: 10%;
+    transform: rotate(-45deg); }
   .shop-item-container img {
     width: 100%;
     transition: 1.2s;

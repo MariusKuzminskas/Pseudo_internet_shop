@@ -36,6 +36,9 @@ $(document).ready(function() {
             let price = originalPrice + shipPrice3;
             $('#priceShip').html(price);
             $('.priceShip').html(price);
+        } else if (pasirinkta == "option1") {
+            $('#priceShip').html(originalPrice);
+            $('.priceShip').html(originalPrice);
         }
         
     })

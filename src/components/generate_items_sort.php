@@ -27,10 +27,15 @@
                 <article class="shop-item-container ">
                     <!-- img container -->
                     <div class="img-container position-relative">
-                        <a href="item.php?id=<?php echo $preke['id']?>"><img src="./img/port-thumb/<?php echo $preke['image']?>.jpg" alt="sapnu gaudyklės nuotrauka"></a>
+                        <a href="item.php?id=<?php echo $preke['id']?>"><img src="./img/1920/<?php echo $preke['image']?>.jpg" alt="sapnu gaudyklės nuotrauka"></a>
                         <p class="sale bg-dark text-light blockquote text-uppercase px-1 position-absolute">
                         <?php if ($preke['sale']) {
                             echo "išpardavimas";    
+                        }?>
+                        </p>
+                        <p class="sold bg-dark text-light display-4 text-uppercase px-1 position-absolute">
+                        <?php if ($preke['sold']) {
+                            echo "parduota";    
                         }?>
                         </p>
                     </div>
@@ -42,8 +47,16 @@
                         <?php if ($preke['sale']) {
                             echo '<s class="text-muted">'.$preke['kaina_buvusi'].' eur</s>'; 
                         } ?>                     
-                        <?php echo $preke['kaina']?> eur</p>
-                        <a href="item.php?id=<?php echo $preke['id']?>" class="btn btn-outline-dark" >Plačiau...</a>
+                        <?php if ($preke['sold']) {
+                            echo "Patiko ši sapnų gaudyklė? <a href='contacts.php'> Susisiek </a> dėl individualaus užsakymo";
+                        }   else echo $preke['kaina']. " eur"; 
+                        ?></p>
+                        
+                        <?php if ($preke['sold']) {
+                            echo "<a href='item.php?id=".$preke['id']."' class='btn btn-outline-dark'>Plačiau...</a>";
+                        } else  echo "<a href='item.php?id=".$preke['id']."' class='btn btn-outline-dark'>Plačiau...</a>";
+                        ?>
+
                     </div>
                 </article>
             </div>

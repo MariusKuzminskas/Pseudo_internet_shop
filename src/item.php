@@ -44,14 +44,22 @@
             <div class="col-lg-6">
                 <!-- Pavadinimas -->
                 <div class="item-name-container ">
-                    <h4 class="h2 bg-light font-w300" ><?php echo $preke['pavadinimas']?></h4>
+                    <h4 class="h2 bg-light font-w300" >
+                            <!-- if its a sold listing do not show the name -->
+                    <?php if (!$preke['sold']) {
+                        echo $preke['pavadinimas'];
+                    } else { echo "Ši gaudyklė jau parduota"; }
+                    ?></h4>
                 </div>
                 <!-- kaina -->
                 <div class="price-container bg-light h4 mb-3">
                     <p class="font-w300">
                 <?php if ($preke['sale']) {
                     echo '<s class="text-muted ">'.$preke['kaina_buvusi'].' eur</s>'; } ?>    
-                <?php echo $preke['kaina']?> eur</p></div>
+                <?php if ($preke['sold']) {
+                        echo "Gaudyklės ID: ".$preke['id'];
+                    } else { echo $preke['kaina']." eur"; }
+                    ?></p></div>
                 <!-- Matmenys -->
                 <div class="row bg-grey  matmenys-container">
                     <div class="col-4">
@@ -75,8 +83,19 @@
                 <!-- buy button -->
                 <div class="to-cart-container bg-grey row">
                     <div class="col-lg-12">
+                        <p class="font-weight-light mt-2">
+                            <?php if ($preke['sold']) {
+                                echo "Patiko ši sapnų gaudyklė? <a href='contacts.php'> Susisiek </a> dėl individualaus užsakymo";
+                        } ?>
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
                         <!-- Button trigger modal -->
-                        <button class="btn btn-dark btn-lg blockquote mt-3" data-toggle="modal" data-target="#pirkti_forma1">pirkti</button>
+                        <?php if (!$preke['sold']) {
+                            echo '<button class="btn btn-dark btn-lg blockquote mt-3" data-toggle="modal" data-target="#pirkti_forma1">pirkti';
+                        } else { echo "<a href='contacts.php' class='btn btn-dark btn-lg blockquote mt-3'>Susisiekti</a>"; }
+                        ?>
+                        </button>
                     </div>
                 </div>    
             </div>
