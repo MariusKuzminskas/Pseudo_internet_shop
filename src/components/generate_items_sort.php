@@ -5,12 +5,12 @@
         if (isset($_POST['sortType'])) {
             
             if ($_POST['sortType'] == 2) {
-                $query = 'SELECT * FROM prekes ORDER BY kaina ASC';
+                $query = 'SELECT * FROM prekes WHERE sold=0 ORDER BY kaina ASC';
                 } else if ($_POST['sortType'] == 3) {
-                    $query = 'SELECT * FROM prekes ORDER BY kaina DESC';
-                } else { $query = 'SELECT * FROM prekes'; }
+                    $query = 'SELECT * FROM prekes WHERE sold=0 ORDER BY kaina DESC';
+                } else { $query = 'SELECT * FROM prekes ORDER BY sold ASC'; }
         
-        } else { $query = 'SELECT * FROM prekes'; }
+        } else { $query = 'SELECT * FROM prekes ORDER BY sold ASC'; }
        
         
 
@@ -24,20 +24,20 @@
 
         
             <div class="col-lg-4 mt-5">
-                <article class="shop-item-container ">
+                <article class="shop-item-container" >
                     <!-- img container -->
-                    <div class="img-container position-relative">
+                    <div class="img-container position-relative" data-aos="fade-up" data-aos-duration="1500">
                         <a href="item.php?id=<?php echo $preke['id']?>"><img src="./img/1920/<?php echo $preke['image']?>.jpg" alt="sapnu gaudyklės nuotrauka"></a>
                         <p class="sale bg-dark text-light blockquote text-uppercase px-1 position-absolute">
-                        <?php if ($preke['sale']) {
+                        <?php if (($preke['sale']) && (!$preke['sold'])) {
                             echo "išpardavimas";    
-                        }?>
+                        } 
+                            if ($preke['sold']) {
+                            echo "parduota"; 
+                        }
+                        ?>
                         </p>
-                        <p class="sold bg-dark text-light display-4 text-uppercase px-1 position-absolute">
-                        <?php if ($preke['sold']) {
-                            echo "parduota";    
-                        }?>
-                        </p>
+                        
                     </div>
                     <!-- under img container -->
                     <div class="under-img-container text-center">     
@@ -48,7 +48,7 @@
                             echo '<s class="text-muted">'.$preke['kaina_buvusi'].' eur</s>'; 
                         } ?>                     
                         <?php if ($preke['sold']) {
-                            echo "Patiko ši sapnų gaudyklė? <a href='contacts.php'> Susisiek </a> dėl individualaus užsakymo";
+                            echo "Patiko ši sapnų gaudyklė? <a href='contacts.php' class='linkas'> Susisiek </a> dėl individualaus užsakymo";
                         }   else echo $preke['kaina']. " eur"; 
                         ?></p>
                         

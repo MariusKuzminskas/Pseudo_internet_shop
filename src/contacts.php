@@ -26,7 +26,7 @@
     
     <div class="row my-4">
         <div class="col-md-6">
-            <div class="form-container">
+            <div class="form-container" data-aos="fade-right">
                 <div class="card bd-primary text-center">
                     <div class="card-body">
                         <h3>Susisiekite</h3>
@@ -37,7 +37,7 @@
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <input type="number" name="telefonas" id="" class="form-control form-control-lg" placeholder="telefonas">
+                                    <input type="tel" name="telefonas" id="" class="form-control form-control-lg" placeholder="telefonas">
                                 </div>
                                 <div class="col">
                                     <input type="email" name="elpastas" id="" class="form-control form-control-lg" required  placeholder="el. paštas">
@@ -69,9 +69,9 @@
 
         <!-- Dešiny šonas -->
         <div class="col-md-6">
-            <div class="row social-row">
+            <div class="row social-row" data-aos="fade-left">
                 <div class="col-12">
-                    <h4 class="text-center mb-4" >Sek mus</h4>
+                    <h4 class="text-center mb-4 mt-4" >Sek mus</h4>
                     <div class="social-box ">
                         <a class="d-block border rounded text-center color-dark-grey" href="http://www.facebook.com/gaudykles" target="_blank">
                         Facebook <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
@@ -89,11 +89,11 @@
     </div> <!-- Row end -->
 
     <div class="row two-pic-row">
-        <div class="col-lg-6 ">
-            <img class="img-fluid w-100" src="./img/contacts/1-min.jpg" alt="Sapnu gaudyklės nuotrauka">
+        <div class="col-lg-6" >
+            <img data-aos="zoom-in-up" class="img-fluid w-100" src="./img/contacts/1-min.jpg" alt="Sapnu gaudyklės nuotrauka">
         </div>
         <div class="col-lg-6">
-            <img class="img-fluid w-100 d-lg-block d-none" src="./img/contacts/2-min.jpg" alt="Sapnu gaudyklės nuotrauka">
+            <img data-aos="zoom-in-up" class="img-fluid w-100 d-lg-block d-none" src="./img/contacts/2-min.jpg" alt="Sapnu gaudyklės nuotrauka">
         </div>
         
     </div>

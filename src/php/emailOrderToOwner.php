@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 
 
     
@@ -11,6 +11,17 @@
     $kliento_gatve = $_POST['gatve'];
     $kliento_postCode = $_POST['postCode'];
     $kliento_postMethod = $_POST['postMethod'];
+    
+    $_SESSION['id'] = $_POST['id'];
+    $_SESSION['kaina'] = $_POST['kaina'];
+    $_SESSION['vardas'] = $_POST['vardas'];
+    $_SESSION['telefonas'] = $_POST['telefonas'];
+    $_SESSION['elpastas'] = $_POST['elpastas'];
+    $_SESSION['miestas'] = $_POST['miestas'];
+    $_SESSION['gatve'] = $_POST['gatve'];
+    $_SESSION['postCode'] = $_POST['postCode'];
+    $_SESSION['postMethod'] = $_POST['postMethod'];
+    $_SESSION['formSubmited'] = $_POST['formSubmited'];
     
 
     // Import PHPMailer classes into the global namespace
@@ -31,23 +42,23 @@
             'allow_self_signed' => true
             )
             );
-        $mail->Host = 'tls://smtp.gmail.com:587';
+            $mail->Host = 'krabas.serveriai.lt';
 
-        $mail->SMTPDebug = 0;                                 // Enable verbose debug output
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        // $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'testams752@gmail.com';                 // SMTP username
-        $mail->Password = 'LabaiSlaptas';                           // SMTP password
-        $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-        // $mail->Port = 587;                                    // TCP port to connect to
-        $mail->Port = 465;                                    // TCP port to connect to
+            $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            // $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = 'info@gaudykles.lt';                 // SMTP username
+            $mail->Password = 'Tauridas775';                           // SMTP password
+            $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+            // $mail->Port = 587;                                    // TCP port to connect to
+            $mail->Port = 465;                                    // TCP port to connect to
 
         
         
         //Recipients
-        $mail->setFrom('iskur@gmail.com', 'EL pastas is puslapio');  //Kas siuncia, test@gmail. (email bus tas is kurio siunciama, vardas veikia)
-        $mail->addAddress("marius752@gmail.com", $kliento_vardas);     // Kam siunti marius752@gmail 
+        $mail->setFrom('info@gaudykles.lt', 'Naujas pirkimas');  //Kas siuncia, test@gmail. (email bus tas is kurio siunciama, vardas veikia)
+        $mail->addAddress("gaudykles@gmail.com", 'Kamilei');     // Kam siunti marius752@gmail 
         // $mail->addAddress('ellen@example.com');               // Name is optional
         $mail->addReplyTo($kliento_elpastas, $kliento_vardas);      // kam bus atsakoma is emailo   prideti kam bus reply kai paspaus (i cia eis pastas is uzpildytos formos)
         // $mail->addCC('cc@example.com');
@@ -67,9 +78,10 @@
                             Gatvė ir nr: ' . $kliento_gatve . ' <br>
                             Pašto kodas: ' . $kliento_postCode . ' <br>
                             Siuntimo metodas: ' . $kliento_postMethod . ' <br>
+                            Kaina su siuntimu: ' . $prekes_kaina . ' eur <br>
                             Parduota gaudyklė ID: ' . $prekes_id;
                             
-        $mail->AltBody = "erroras kazkur";
+        $mail->AltBody = "";
 
             
         
@@ -89,7 +101,7 @@
         //mysqli_close($conn);
         
          //$_SESSION["isiuntimas"] = 1;
-         //header("Refresh:0");
+         header("Location: ./emailOrderToClient.php");
          //echo "<meta http-equiv='refresh' content='0'>";
     //    echo 'Message has been sent';
     } catch (Exception $e) {

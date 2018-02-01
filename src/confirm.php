@@ -1,4 +1,5 @@
-<?php include('./load/head.php'); ?>
+<?php   session_start();
+        include('./load/head.php'); ?>
 
 <body class="bg-light" >
     <!-- top logo -->
@@ -38,6 +39,7 @@
     //$kainaSuSiuntimu = $preke['kaina'];
     
         
+    if (!isset($_SESSION['formSubmited'])) {
         // item price plus shipping method calculation
         if ($_POST['postMethod'] == "nemokamas_siuntimas") {
             $kainaSuSiuntimu = $preke['kaina'];
@@ -46,6 +48,7 @@
         } else if ($_POST['postMethod'] == "omniva") {
             $kainaSuSiuntimu = $preke['kaina'] + 1;
         }
+    }
     
 
 
@@ -59,10 +62,10 @@
             <h4 class="font-weight-light">Prekės užsakymo patvirtinimas</h4>
             
             <!-- if confirm submit button was pressed -->
-            <?php if (isset($_POST['formSubmited'])) { ?>
+            <?php if (isset($_SESSION['formSubmited'])) { ?>
                 <!-- order success alert -->
                 <div class="alert alert-success" role="alert">
-                    Jūsų gaudyklė užsakyta.
+                    Jūsų gaudyklė užsakyta, apie prekę informacija gausite el. paštu.
                 </div>
                 
                 <?php 
@@ -71,13 +74,7 @@
                     // set item as sold = 1
                     $setSold = "UPDATE prekes SET sold=1 WHERE id=$id;";
                     $update = mysqli_query($conn, $setSold);
-
-                    // send email to the owner
-                    include("./php/emailOrderToOwner.php");
-                    
-                    
-                    // send email to the customer
-                    //include("./php/emailOrderToClient.php");
+                    session_destroy();
                 
                 ?>
                 
@@ -88,7 +85,7 @@
             <p class="text-justify">Paspausdami žemiau esantį mygtuką jūs patvirtinate kad jau padarėte arba netrukus padarysite <span class="font-weight-bold"><?php echo $kainaSuSiuntimu ?> eur</span>  bankinį pavedimą
             į sąskaitą: <span class="font-weight-bold">LT497300010141118654</span> "Swedbank", 
             Kamilė Steponavičiūtė.</p>
-            <form action="#" method="post">
+            <form action="./php/emailOrderToOwner.php" method="post">
                 <input type="submit" class="btn btn-success mb-2" name="button" value="Patvirtinti">
             
                 <p class="mb-1 pb-1">jūsų duomenys:</p>

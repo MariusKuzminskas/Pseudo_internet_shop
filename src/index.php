@@ -19,7 +19,7 @@
     </section>
     
     <!-- Instagram row -->
-    <section class="container instagram-posts">
+    <section class="container instagram-posts" >
         <?php include('./components/instafeed.php'); ?>    
     </section>
     <!-- Spacer -->
@@ -34,7 +34,7 @@
         </div>
     </section> -->
     <section class="container promo-footer ">
-        <div class="w-100"><img class="img-fluid d-block mx-auto" src="./img/footer.png" alt="gaudyklių pristatymas nemokakas visoje lietuvoje"></div>
+        <div data-aos="zoom-in-up"  class="w-100"><img class="img-fluid d-block mx-auto" src="./img/footer.png" alt="gaudyklių pristatymas nemokakas visoje lietuvoje"></div>
         
     </section>
     <?php include('./components/footer.php'); ?>    

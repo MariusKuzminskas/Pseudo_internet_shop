@@ -18,16 +18,16 @@
                 </article> -->
                 <div class="row mb-3 four-pic-row">
                     <div class="col-lg-3">
-                        <img class="img-fluid rounded-circle" src="./img/about/1-min.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img data-aos="flip-left" class="img-fluid rounded-circle" src="./img/about/1-min.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                     <div class="col-lg-3">
-                        <img class="img-fluid rounded-circle" src="./img/about/2-min.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img data-aos="flip-up" class="img-fluid rounded-circle" src="./img/about/2-min.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                     <div class="col-lg-3">
-                        <img class="img-fluid rounded-circle" src="./img/about/3-min.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img data-aos="flip-right" class="img-fluid rounded-circle" src="./img/about/3-min.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                     <div class="col-lg-3">
-                        <img class="img-fluid rounded-circle" src="./img/about/4-min.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img data-aos="flip-down" class="img-fluid rounded-circle" src="./img/about/4-min.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                 </div>
             </div>
@@ -52,16 +52,16 @@
                     <div class="col-lg-6 my-auto">
                         <h3 class="pb-3 h4">KĄ GALIME SUTEIKTI?</h3>
                         <ul class="fa-ul" >
-                            <li><i class="fa-li fa fa-check-square "></i><p>Greitą ir kokybišką aptarnavimą</p></li>
-                            <li><i class="fa-li fa fa-check-square "></i><p>Jau padarytų gaudyklių pardavimą</p></li>
-                            <li><i class="fa-li fa fa-check-square "></i><p>Individualių užsakymų kūrimą</p></li>
-                            <li><i class="fa-li fa fa-check-square "></i><p>Sapnų gaudyklių gamybos seminarus</p></li>
-                            <li><i class="fa-li fa fa-check-square "></i><p>Šventėms/renginiams sapnų gaudyklių nuomą</p></li>
+                            <li data-aos="zoom-in"><i class="fa-li fa fa-check-square "></i><p>Greitą ir kokybišką aptarnavimą</p></li>
+                            <li data-aos="zoom-in"><i class="fa-li fa fa-check-square "></i><p>Jau padarytų gaudyklių pardavimą</p></li>
+                            <li data-aos="zoom-in"><i class="fa-li fa fa-check-square "></i><p>Individualių užsakymų kūrimą</p></li>
+                            <li data-aos="zoom-in"><i class="fa-li fa fa-check-square "></i><p>Sapnų gaudyklių gamybos seminarus</p></li>
+                            <li data-aos="zoom-in"><i class="fa-li fa fa-check-square "></i><p>Šventėms/renginiams sapnų gaudyklių nuomą</p></li>
                         </ul>
                     </div>
                     <!-- img col -->
                     <div class="col-lg-6">
-                        <img class="rounded-circle img-fluid  " src="./img/about/5-min.jpg" alt="sapnų gaudyklės nuotrauka">
+                        <img data-aos="zoom-out-up" class="rounded-circle img-fluid  " src="./img/about/5-min.jpg" alt="sapnų gaudyklės nuotrauka">
                     </div>
                 </div>
             </div>

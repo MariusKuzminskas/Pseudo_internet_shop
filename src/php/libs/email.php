@@ -26,14 +26,14 @@
             'allow_self_signed' => true
             )
             );
-        $mail->Host = 'tls://smtp.gmail.com:587';
+        $mail->Host = 'krabas.serveriai.lt';
 
         $mail->SMTPDebug = 0;                                 // Enable verbose debug output
         $mail->isSMTP();                                      // Set mailer to use SMTP
         // $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'testams752@gmail.com';                 // SMTP username
-        $mail->Password = 'LabaiSlaptas';                           // SMTP password
+        $mail->Username = 'info@gaudykles.lt';                 // SMTP username
+        $mail->Password = 'Tauridas775';                           // SMTP password
         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         // $mail->Port = 587;                                    // TCP port to connect to
         $mail->Port = 465;                                    // TCP port to connect to
@@ -41,8 +41,8 @@
         
         
         //Recipients
-        $mail->setFrom('iskur@gmail.com', 'EL pastas is puslapio');  //Kas siuncia, test@gmail. (email bus tas is kurio siunciama, vardas veikia)
-        $mail->addAddress("marius752@gmail.com", $kliento_vardas);     // Kam siunti marius752@gmail 
+        $mail->setFrom('info@gaudykles.lt', 'EL pastas is Gaudykles.lt');  //Kas siuncia, test@gmail. (email bus tas is kurio siunciama, vardas veikia)
+        $mail->addAddress("gaudykles@gmail.com", $kliento_vardas);     // Kam siunti marius752@gmail 
         // $mail->addAddress('ellen@example.com');               // Name is optional
         $mail->addReplyTo($kliento_elpastas, $kliento_vardas);      // kam bus atsakoma is emailo   prideti kam bus reply kai paspaus (i cia eis pastas is uzpildytos formos)
         // $mail->addCC('cc@example.com');
@@ -58,11 +58,11 @@
         $mail->Body    = '<b> Siuntėjas: ' . $kliento_vardas . '</b> <br>
                         <b> Telefonas: ' . $kliento_telefonas . '</b> <br>
                     ' . 'Pranešimas: ' . $kliento_zinute;
-        $mail->AltBody = 'Jus kieti!' . $kliento_zinute;
+        $mail->AltBody = 'pranešimas' . $kliento_zinute . $kliento_elpastas;
 
             
         
-        //$mail->send();
+        $mail->send();
         
         // sekmingai isiustas emailas irasomas i duomenu baze kaip atsargine kopija
 

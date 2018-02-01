@@ -57,6 +57,13 @@ footer .fa {
     .shop-item-container img:hover {
       transform: scale(1); }
 
+.linkas {
+  color: #086400;
+  transition: 2s;
+  font-weight: bolder; }
+  .linkas:hover {
+    text-shadow: 10px 10px 8px black; }
+
 .bg-grey {
   background-color: #f1f1f1; }
 
@@ -70,6 +77,13 @@ footer .fa {
   top: 10%;
   right: 20px;
   z-index: 100; }
+
+.to-cart-container .linkas {
+  color: #086400;
+  transition: 2s;
+  font-weight: bold; }
+  .to-cart-container .linkas:hover {
+    text-shadow: 10px 10px 8px black; }
 
 .about-container li {
   list-style: none; }
@@ -99,6 +113,7 @@ footer .fa {
 
 .contact-text a {
   color: #086400;
-  transition: 2s; }
+  transition: 2s;
+  font-weight: bolder; }
   .contact-text a:hover {
     text-shadow: 10px 10px 8px black; }

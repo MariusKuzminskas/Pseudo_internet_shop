@@ -1,4 +1,4 @@
-<?php   //session_start();
+<?php   //session_destroy();
         include('./load/head.php'); ?>
 
 <body class="bg-light" >
@@ -34,7 +34,7 @@
 
         <article class="row color-dark-grey d-flex mt-5">
             <!-- image column -->
-            <div class="col-lg-6 pic-container position-relative">
+            <div class="col-lg-6 pic-container position-relative" data-aos="zoom-in-up">
                 <p class="sale bg-dark text-light blockquote text-uppercase position-absolute px-1">
                 <?php   if ($preke['sale']) {
                             echo "išpardavimas";    
@@ -86,7 +86,7 @@
                     <div class="col-lg-12">
                         <p class="font-weight-light mt-2">
                             <?php if ($preke['sold']) {
-                                echo "Patiko ši sapnų gaudyklė? <a href='contacts.php'> Susisiek </a> dėl individualaus užsakymo";
+                                echo "Patiko ši sapnų gaudyklė? <a href='contacts.php' class='linkas'> Susisiek </a> dėl individualaus užsakymo";
                         } ?>
                         </p>
                     </div>
@@ -124,9 +124,9 @@
                         <div class="form-group">
                             <label for="pristatymoBudas">Pasirinkite pristatymo būdą:</label>
                             <select class="form-control" id="pristatymoBudas" name="postMethod">
-                            <option  value="nemokamas_siuntimas" selected="selected" >Nemokamas siuntimas Lietuvos paštu</option>
-                            <option  value="kurjeris">Pristatymas kurjeriu 1-2 d.d.: €5.00</option>
-                            <option  value="omniva">Atsiimti OMNIVA paštomate 1-2 d.d. €1.00</option>
+                            <option  value="nemokamas_siuntimas" selected="selected" >Nemokamas siuntimas paštu</option>
+                            <option  value="kurjeris">Kurjeris 1-2 d.d.: €5.00</option>
+                            <option  value="omniva">OMNIVA paštomate(Vilniuje) 1-2 d.d. €1.00</option>
                         </select>
                         </div>
                         <div class="row">
@@ -138,7 +138,7 @@
                                 <input type="text" name="vardas" id="" class="form-control" placeholder="Vardas">
                             </div>
                             <div class="col">
-                                <input type="text" name="pavarde" id="" class="form-control" required value="Pavardenis" placeholder="Pavardė">
+                                <input type="text" name="pavarde" id="" class="form-control" required  placeholder="Pavardė">
                             </div>
                         </div>
                         <div class="form-row mb-2">
@@ -146,15 +146,15 @@
                                 <input type="tel" name="telefonas" id="" class="form-control" placeholder="telefonas">
                             </div>
                             <div class="col">
-                                <input type="email" name="elpastas" id="" class="form-control" required value="nereikia@gal.lt"  placeholder="el. paštas">
+                                <input type="email" name="elpastas" id="" class="form-control" required   placeholder="el. paštas">
                             </div>
                         </div>
                         <div class="form-row mb-2">
                             <div class="col">
-                                <input type="text" name="miestas" id="" class="form-control" required value="Giedriai" placeholder="miestas">
+                                <input type="text" name="miestas" id="" class="form-control" required  placeholder="miestas">
                             </div>
                             <div class="col">
-                                <input type="text" name="gatve" id="" class="form-control" required value="Tauranu 5a"  placeholder="gatvė ir namo nr">
+                                <input type="text" name="gatve" id="" class="form-control" required   placeholder="gatvė ir namo nr">
                             </div>
                         </div>
                         <div class="form-row mb-2">

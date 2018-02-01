@@ -92,8 +92,14 @@ footer {
         width: 100%;
         @include imgScale();
         // height: 20rem;
-         
     }
+    
+}
+.linkas {
+    //text-decoration: none;
+    color: rgb(8, 100, 0);
+    @include textShadow();
+    font-weight: bolder;
 }
 
 
@@ -120,6 +126,15 @@ footer {
         top:10%;
         right: 20px;
         z-index: 100;
+    }
+}
+
+.to-cart-container {
+    .linkas {
+        //text-decoration: none;
+        color: rgb(8, 100, 0);
+        @include textShadow();
+        font-weight: bold;
     }
 }
 
@@ -168,6 +183,7 @@ footer {
         //text-decoration: none;
         color: rgb(8, 100, 0);
         @include textShadow();
+        font-weight: bolder;
     }
 }
 
