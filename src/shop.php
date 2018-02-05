@@ -9,6 +9,8 @@
     </section>
     <section class="container navigation-section">
         <?php include('./components/selection.php'); ?>    
+        <h1 class="h3 text-uppercase text-center color-dark-grey border-bottom">Parduodamos Sapnų Gaudyklės</h1>
+        <div class="div-row py-1 mx-auto"> </div>
     </section>
     
     <!-- Main -->
